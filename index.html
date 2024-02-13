@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My brand</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
 </head>
 
 <body>
     <!-- The navigation bar -->
     <header>
-        <a href="#" class="logo"><img src="/Images/Logo.png" alt="logo"></a>
+        <a  class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -24,8 +25,7 @@
     </header>
 
     <!-- The main body contents -->
-    <div class="container">
-
+    <main>
         <!-- The home section -->
         <section id="home">
             <div class="homeWrapper">
@@ -47,7 +47,7 @@
 
         <!-- The about section -->
         <section id="about">
-            <!-- <div class="aboutImage">
+            <div class="aboutImage">
                 <div class="imageContainer">
                     <img src="/Images/aboutImage.png" alt="aboutImage">
                 </div>
@@ -59,10 +59,84 @@
                 <p>From crafting responsive layouts to implementing state-of-the-art features, I enjoy the challenges
                     that come with building modern and dynamic web applications</p>
                 <button class="contactMe">Contact Me</button>
-            </div> -->
+            </div>
         </section>
         <section id="skills">
-            <h1>My skills</h1>
+            <h1>My <b>Skills</b></h1>
+            <p>To build a modern web application utilizing HTML, CSS, React for frontend interactivity, Tailwind CSS for styling, MongoDB for data storage, and Node.js with Express for backend server functionality.</p>
+
+            <div class="skillsProgress">
+                <div class="figma">
+                    <span>Figma</span>
+                    <div class="progress">
+                        <div class="percentage"></div>
+                    </div>
+                    <div class="number"><i>90%</i></div>
+                </div>
+                <div class="figma">
+                    <span>HTML 5</span>
+                    <div class="progress">
+                        <div class="percentageHtml"></div>
+                    </div>
+                    <div class="numberHtml"><i>80%</i></div>
+                </div>
+                <div class="figma">
+                    <span>CSS 3</span>
+                    <div class="progress">
+                        <div class="percentageCss"></div>
+                    </div>
+                    <div class="numberCss"><i>70%</i></div>
+                </div>
+                <div class="figma">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div class="percentageJs"></div>
+                    </div>
+                    <div class="numberJs"><i>55%</i></div>
+                </div>
+                <div class="figma">
+                    <span>React Js</span>
+                    <div class="progress">
+                        <div class="percentageReact"></div>
+                    </div>
+                    <div class="numberReact"><i>75%</i></div>
+                </div>
+                <div class="figma">
+                    <span>Tailwind CSS</span>
+                    <div class="progress">
+                        <div class="percentageTail"></div>
+                    </div>
+                    <div class="numberTail"><i>80%</i></div>
+                </div>
+                <div class="figma">
+                    <span>Node Js</span>
+                    <div class="progress">
+                        <div class="percentageNode"></div>
+                    </div>
+                    <div class="numberNode"><i>30%</i></div>
+                </div>
+                <div class="figma">
+                    <span>Express Server</span>
+                    <div class="progress">
+                        <div class="percentageEx"></div>
+                    </div>
+                    <div class="numberEx"><i>40%</i></div>
+                </div>
+                <div class="figma">
+                    <span>Git</span>
+                    <div class="progress">
+                        <div class="percentageGit"></div>
+                    </div>
+                    <div class="numberGit"><i>60%</i></div>
+                </div>
+                <div class="figma">
+                    <span>TypeScript</span>
+                    <div class="progress">
+                        <div class="percentageType"></div>
+                    </div>
+                    <div class="numberGit"><i>40%</i></div>
+                </div>
+            </div>
         </section>
         <section id="portfolio">
             <h1>Portfolio</h1>
@@ -76,7 +150,7 @@
         <section id="login">
             <h1>Login</h1>
         </section>
-    </div>
+    </main>
     <script src="/styles/index.js"></script>
 </body>
 
