@@ -1,5 +1,6 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+
 window.onscroll = () =>{
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -16,3 +17,31 @@ window.onscroll = () =>{
         }
     })
 }
+
+document.addEventListener('scroll', ()=>{
+    const header = document.querySelector('header')
+    if(window.scrollY > 0){
+        header.classList.add('scrolled')
+    }else{
+        header.classList.remove('scrolled')
+    }
+})
+
+function scrollToSection(sectionId) {
+    let targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); 
+  
+      let targetId = this.getAttribute('href').substring(1);
+      scrollToSection(targetId);
+    });
+  });
