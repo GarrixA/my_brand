@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My brand</title>
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
+
 <body>
+    <!-- The navigation bar -->
     <header>
-        <a href="#" class="logo">Uwineza</a>
+        <a href="#" class="logo"><img src="/Images/Logo.png" alt="logo"></a>
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -19,12 +22,44 @@
             <a href="#login" class="login">Login</a>
         </nav>
     </header>
+
+    <!-- The main body contents -->
     <div class="container">
+
+        <!-- The home section -->
         <section id="home">
-            <h1>Home Page</h1>
+            <div class="homeWrapper">
+                <div class="homeText">
+                    <span>Hello, Welcome!</span>
+                    <h1>I am Aphrodis Uwineza</h1>
+                    <p>I am a front-end developer experienced in responsive design, and interactive websites or web
+                        applications that deliver a positive user experience.</p>
+                    <button class="contactMe">Contact Me</button>
+                </div>
+                <div class="homeImage">
+                    <div class="imageContainer">
+                        <img src="/Images/homeImage.png" alt="homeImage">
+                    </div>
+
+                </div>
+            </div>
         </section>
+
+        <!-- The about section -->
         <section id="about">
-            <h1>About Page</h1>
+            <!-- <div class="aboutImage">
+                <div class="imageContainer">
+                    <img src="/Images/aboutImage.png" alt="aboutImage">
+                </div>
+            </div>
+            <div class="aboutText">
+                <h1>About <b>Me.</b></h1>
+                <p>I thrive on turning ideas into interactive and user-friendly experiences. My journey in the world of
+                    web development has been an exciting adventure of constant learning and creating.</p>
+                <p>From crafting responsive layouts to implementing state-of-the-art features, I enjoy the challenges
+                    that come with building modern and dynamic web applications</p>
+                <button class="contactMe">Contact Me</button>
+            </div> -->
         </section>
         <section id="skills">
             <h1>My skills</h1>
@@ -42,5 +77,7 @@
             <h1>Login</h1>
         </section>
     </div>
+    <script src="/styles/index.js"></script>
 </body>
+
 </html>
