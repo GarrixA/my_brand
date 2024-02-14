@@ -1,0 +1,98 @@
+/* The about sectoin or about page */
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #about .aboutImage{
+    width: 50%;
+  }
+  
+  #about .aboutImage .imageContainer{
+    width: 100%;
+  }
+  
+  #about .aboutImage .imageContainer img{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* Responsiveness */
+  @media (min-width: 1024px) {
+    /* The about sectoin or about page */
+
+    #about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #about .aboutImage {
+        width: 50%;
+    }
+
+    #about .aboutImage .imageContainer {
+        width: 100%;
+    }
+
+    #about .aboutImage .imageContainer img {
+        width: 100%;
+        object-fit: contain;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #about .aboutImage {
+        width: 35%;
+    }
+
+    #about .aboutImage .imageContainer {
+        width: 100%;
+    }
+
+    #about .aboutImage .imageContainer img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #about .aboutText{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        width: 55%;
+    }
+
+    #about .aboutText h1{
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    #about .aboutText h1 b{
+        color: #EAB308;
+        font-size: 3.4rem;
+        font-weight: 700;
+    }
+
+    #about .aboutText p{
+        color: #fff;
+        font-size: 1.38rem;
+    }
+
+    #about .aboutText .contactMe{
+        width: 30%;
+        padding: .50rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+  }
+  /* for the screen size of mininimum width of 640 px */
+@media (min-width: 640px) {}

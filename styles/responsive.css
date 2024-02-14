@@ -1,3 +1,5 @@
+
+/* Responsiveness of reusable components like buttons that has the same class and others like nav footer... */
 @media (min-width: 1280px) {
 
     /* The container of navbar and navlinks */
@@ -63,40 +65,6 @@
         min-height: 100vh;
     }
 
-    /* Styles of home section */
-    .homeWrapper {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: space-between;
-        height: 80vh;
-        margin-top: 100px;
-    }
-
-    /* Home section left part wich contains text and Contact me button */
-    .homeWrapper .homeText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 50%;
-        gap: 10px;
-    }
-
-    .homeWrapper .homeText span {
-        color: #EAB308;
-        font-size: 24px;
-    }
-
-    .homeWrapper .homeText h1 {
-        color: #fff;
-        font-size: 64px;
-    }
-
-    .homeWrapper .homeText p {
-        font-size: 22px;
-        color: #fff;
-    }
-
     /* The contact me button as a reusable button */
     .contactMe {
         color: #fff;
@@ -104,51 +72,13 @@
         width: 15%;
         border: none;
         padding: 8px;
-        font-size: 15px;
+        font-size: 1rem;
         font-weight: 600;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    /* Hme section right part wich contains an image */
-
-    .homeWrapper .homeImage {
-
-        width: 28%;
-    }
-
-    .homeWrapper .homeImage .imageContainer {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .homeWrapper .homeImage .imageContainer img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* The about sectoin or about page */
-
-    #about {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #about .aboutImage {
-        width: 50%;
-    }
-
-    #about .aboutImage .imageContainer {
-        width: 100%;
-    }
-
-    #about .aboutImage .imageContainer img {
-        width: 100%;
-        object-fit: contain;
-    }
+   
 }
 
 /* for the screen size minimum width is 1024 px */
@@ -217,92 +147,22 @@
         min-height: 100vh;
     }
 
-    /* Styles of home section */
-    .homeWrapper {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: space-between;
-        height: 80vh;
-        margin-top: 100px;
-    }
-
-    /* Home section left part wich contains text and Contact me button */
-    .homeWrapper .homeText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 50%;
-        gap: 10px;
-    }
-
-    .homeWrapper .homeText span {
-        color: #EAB308;
-        font-size: 24px;
-    }
-
-    .homeWrapper .homeText h1 {
-        color: #fff;
-        font-size: 64px;
-    }
-
-    .homeWrapper .homeText p {
-        font-size: 22px;
-        color: #fff;
-    }
+   
 
     /* The contact me button as a reusable button */
     .contactMe {
         color: #fff;
         background-color: #EAB308;
-        width: 15%;
+        width: 25%;
         border: none;
-        padding: 8px;
+        padding: 1rem;
         font-size: 15px;
         font-weight: 600;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    /* Hme section right part wich contains an image */
-
-    .homeWrapper .homeImage {
-
-        width: 28%;
-    }
-
-    .homeWrapper .homeImage .imageContainer {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .homeWrapper .homeImage .imageContainer img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* The about sectoin or about page */
-
-    #about {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #about .aboutImage {
-        width: 50%;
-    }
-
-    #about .aboutImage .imageContainer {
-        width: 100%;
-    }
-
-    #about .aboutImage .imageContainer img {
-        width: 100%;
-        object-fit: contain;
-    }
+    
 
 }
 
@@ -355,248 +215,17 @@
         color: #EAB308;
     }
 
-    .homeWrapper {
-        padding-top: 15rem;
-        margin-top: 0px;
-    }
-
-    .homeWrapper .homeText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 50%;
-        gap: 10px;
-    }
-
-    .homeWrapper .homeText span {
-        color: #EAB308;
-        font-size: 24px;
-    }
-
-    .homeWrapper .homeText h1 {
-        color: #fff;
-        font-size: 50px;
-    }
-
-    .homeWrapper .homeText p {
-        font-size: 22px;
-        color: #fff;
-    }
-
-
-    /* The contact me button as a reusable button */
     .contactMe {
         color: #fff;
         background-color: #EAB308;
         width: 20%;
         border: none;
-        padding: 8px;
-        font-size: 15px;
+        padding: .8rem .5rem .8rem .5rem;
+        font-size: 1rem;
         font-weight: 600;
         border-radius: 5px;
         cursor: pointer;
     }
-
-    #about {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #about .aboutImage {
-        width: 35%;
-    }
-
-    #about .aboutImage .imageContainer {
-        width: 100%;
-    }
-
-    #about .aboutImage .imageContainer img {
-        width: 100%;
-        object-fit: contain;
-    }
-
-    #about .aboutText{
-        display: flex;
-        flex-direction: column;
-        gap: .8rem;
-        width: 55%;
-    }
-
-    #about .aboutText h1{
-        color: #fff;
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    #about .aboutText h1 b{
-        color: #EAB308;
-        font-size: 3.4rem;
-        font-weight: 700;
-    }
-
-    #about .aboutText p{
-        color: #fff;
-        font-size: 1.38rem;
-    }
-
-    #about .aboutText .contactMe{
-        width: 30%;
-        padding: .50rem;
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
-
-    /* skills page or section */
-    #skills{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #skills h1{
-        font-size: 3rem;
-        color: #fff;
-        padding-top: 5rem;
-        text-align: center;
-    }
-
-    #skills h1 b{
-        color: #EAB308;
-    }
-
-    #skills p{
-        font-size: 1.38rem;
-        color: #fff;
-        text-align: start;
-        margin-top: 1rem;
-    }
-
-    /* the skills and their progress */
-
-    .skillsProgress{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem 5rem;
-        margin-top: 3rem;
-    }
-
-    #skills .figma{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        color: #fff;
-        /* width: 85%; */
-    }
-
-    #skills .figma .progress{
-        width: 100%;
-        height: .6rem;
-        background-color: #fff;
-        margin-top: .4rem;
-        border-radius: 1rem;
-    }
-    #skills .figma .progress .percentage{
-        width: 90%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-
-    #skills .figma .number{
-        position: absolute;
-        left: 90%;
-    }
-    #skills .figma .progress .percentageHtml{
-        width: 80%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberHtml{
-        position: absolute;
-        left: 80%;
-    }
-    #skills .figma .progress .percentageCss{
-        width: 70%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberCss{
-        position: absolute;
-        left: 70%;
-    }
-    #skills .figma .progress .percentageJs{
-        width: 55%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberJs{
-        position: absolute;
-        left: 55%;
-    }
-    #skills .figma .progress .percentageReact{
-        width: 75%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberReact{
-        position: absolute;
-        left: 75%;
-    }
-    #skills .figma .progress .percentageTail{
-        width: 80%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberTail{
-        position: absolute;
-        left: 80%;
-    }
-    #skills .figma .progress .percentageNode{
-        width: 30%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberNode{
-        position: absolute;
-        left: 30%;
-    }
-    #skills .figma .progress .percentageEx{
-        width: 40%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberEx{
-        position: absolute;
-        left: 40%;
-    }
-    #skills .figma .progress .percentageGit{
-        width: 60%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberGit{
-        position: absolute;
-        left: 60%;
-    }
-    #skills .figma .progress .percentageType{
-        width: 40%;
-        height: .6rem;
-        background-color: #EAB308;
-        border-radius: 1rem;
-    }
-    #skills .figma .numberType{
-        position: absolute;
-        left: 400%;
-    }
-
 }
 
 /* for the screen size of mininimum width of 640 px */
