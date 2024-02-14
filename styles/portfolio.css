@@ -1,0 +1,76 @@
+@media (min-width: 768px) {
+    
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+
+    }
+     /* Presantation texts */
+     #portfolio h1{
+        font-size: 3rem;
+        color: #fff;
+        text-align: center;
+        margin-top: 3rem;
+     }
+
+     #portfolio h1 b{
+        color: #EAB308;
+        font-size: 3.4rem;
+        font-weight: 700;
+     }
+
+     #portfolio p{
+        color: #fff;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+     }
+
+    /* Portfolio images */
+    #portfolio .big{
+        width: 40%;
+        height: 20rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    #portfolio .big img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    #portfolio .portfolioWrapper .otherImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem;
+    }
+
+    #portfolio .others{
+        width: 80%;
+        height: 10rem; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: stretch;
+        padding: 1rem .5rem;
+    }
+
+    #portfolio .others img{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+    /* flexing all the images */
+
+    #portfolio .portfolioWrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    #portfolio .portfolioWrapper .slider{
+        position: absolute;
+        right: 2%;
+        cursor: pointer;
+    }
+}

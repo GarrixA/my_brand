@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My brand</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="/styles/About.css">
+    <link rel="stylesheet" href="/styles/blogs.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    <link rel="stylesheet" href="/styles/skills.css">
 </head>
 
 <body>
     <!-- The navigation bar -->
     <header>
-        <a  class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
+        <a class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -63,7 +70,8 @@
         </section>
         <section id="skills">
             <h1>My <b>Skills</b></h1>
-            <p>To build a modern web application utilizing HTML, CSS, React for frontend interactivity, Tailwind CSS for styling, MongoDB for data storage, and Node.js with Express for backend server functionality.</p>
+            <p>To build a modern web application utilizing HTML, CSS, React for frontend interactivity, Tailwind CSS for
+                styling, MongoDB for data storage, and Node.js with Express for backend server functionality.</p>
 
             <div class="skillsProgress">
                 <div class="figma">
@@ -138,17 +146,113 @@
                 </div>
             </div>
         </section>
+
+        <!-- The portfolio section  -->
         <section id="portfolio">
-            <h1>Portfolio</h1>
+            <h1>My <b>Portfolio</b></h1>
+            <p>I am a front-end developer experienced in responsive design, and interactive websites or web applications
+                that deliver a positive user experience. I use HTML, CSS, JavaScript, React, and Tailwind CSS is adept
+                at creating the visual elements.<b>Of cause I made some cool staff.</b></p>
+
+            <!-- Portfolio images -->
+            <div class="portfolioWrapper">
+                <div class="big">
+                    <img src="/images/smpark.png" alt="smartParking" class="big-image">
+                </div>
+                <div class="otherImages">
+                    <div class="others">
+                        <img src="/images/timer.png" alt="timer" class="image">
+                    </div>
+                    <div class="others">
+                        <img src="/images/Dashboard.png" alt="dashboard" class="image">
+                    </div>
+                    <div class="others">
+                        <img src="/images/trip.png" alt="planner" class="image">
+                    </div>
+                    <div class="others">
+                        <img src="/images/abicar.png" alt="" class="image">
+                    </div>
+                </div>
+                <img src="/images/Slider.svg" alt="Slider" class="slider">
+            </div>
         </section>
+
+        <!-- blogs section -->
         <section id="blogs">
             <h1>Blogs</h1>
+            <div class="blogsContainer">
+                <div class="blog">
+                    <div class="blogImage">
+                        <img src="/images/blog.svg" alt="blog">
+                    </div>
+                    <h2>Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
+                    <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before
+                        the final copy is availableA typeface without relying on meaningful content..... </p>
+                    <button>View more</button>
+                </div>
+                <div class="blog">
+                    <div class="blogImage">
+                        <img src="/images/blog.svg" alt="blog">
+                    </div>
+                    <h2>Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
+                    <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before
+                        the final copy is availableA typeface without relying on meaningful content..... </p>
+                    <button>View more</button>
+                </div>
+                <div class="blog">
+                    <div class="blogImage">
+                        <img src="/images/blog.svg" alt="blog">
+                    </div>
+                    <h2>Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
+                    <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before
+                        the final copy is availableA typeface without relying on meaningful content..... </p>
+                    <button>View more</button>
+                </div>
+                <img src="/images/Slider.svg" alt="Slider" class="slider">
+            </div>
         </section>
+
+        <!-- contact me section -->
         <section id="contact">
-            <h1>Contact</h1>
+            <h1>Let's <b>Connect</b></h1>
+            <p>You can Reach out to me anytime at my physical address or just contact me on my social media or phone I
+                am available 24/7</p>
+            <div class="connectWrapper">
+                <div class="address">
+                    <h3>Address:<i>Kn 136 st, Mumena, Nyarugenge</i></h3>
+                    <h3>Phone:<i>+250789438437</i></h3>
+                    <h3>Email:<i>aphrodisu2019@gmail.com</i></h3>
+                    <h3>Instagram:<i>aphrodis garrix</i></h3>
+                    <h3>Twitter:<i>aphrodis garrix</i></h3>
+                    <h3>LinkedIn:<i>Aphrodis Uwineza</i></h3>
+                </div>
+                <div class="contactForm">
+                    <h2>Get in<b>Touch</b></h2>
+                    <form>
+                        <input type="text" placeholder="Type your name...">
+                        <input type="email" placeholder="Type your email...">
+                        <textarea name="" cols="50" rows="5" placeholder="Type your message..."></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
+
+        <!-- Log in section -->
         <section id="login">
-            <h1>Login</h1>
+            <div class="loginWrapper">
+                <h1>Sign in</h1>
+                <form>
+                    <input type="email" placeholder="Type your email...">
+                    <input type="password" placeholder="Type your password...">
+                    <button type="submit">Login</button>
+                    <p>forgot your password</p>
+                </form>
+                <h3>Don't have an account <b>Sign up</b></h3>
+            </div>
         </section>
     </main>
     <script src="/styles/index.js"></script>
