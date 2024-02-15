@@ -1,6 +1,6 @@
 
 /* for the screensize of minimum width is 768 px */
-@media (min-width: 768px) {
+
      /* skills page or section */
      #skills{
         display: flex;
@@ -150,4 +150,33 @@
         position: absolute;
         left: 400%;
     }
-}
+
+    @media (max-width: 640px){
+        #skills{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skillsProgress{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 5rem;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        #skills h1{
+            font-size: 2.5rem;
+            color: #fff;
+            padding-top: 5rem;
+            text-align: center;
+        }
+
+        #skills p{
+            font-size: 1.1rem;
+            color: #fff;
+            text-align: start;
+            margin-top: 1rem;
+        }
+    }

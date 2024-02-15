@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+
     #contact{
         display: flex;
         flex-direction: column;
@@ -97,4 +97,10 @@
         width: 25%;
         font-size: 1.2rem;
     }
-}
+
+    @media (max-width: 640px){
+        #contact .connectWrapper{
+            display: flex;
+            flex-direction: column;
+        }
+    }
