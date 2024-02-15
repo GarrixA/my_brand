@@ -86,6 +86,13 @@
             gap: 1rem;
             align-items: center;
         }
+
+        #blogs h1{
+            color: #EAC308;
+            font-size: 3rem;
+            margin: 3rem 3rem 0rem 0rem;
+            text-align: center;
+        }
         
         #blogs .blogsContainer{
             display: grid;
@@ -97,5 +104,9 @@
 
         #blogs .blogsContainer .blog{
             display: none;
+        }
+
+        #blogs .blogsContainer .blog:first-child{
+            display: flex;
         }
     }

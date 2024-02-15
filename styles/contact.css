@@ -103,4 +103,76 @@
             display: flex;
             flex-direction: column;
         }
+
+        #contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact h1{
+            color: #fff;
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+    
+        #contact h1 b{
+            color: #eac308;
+            font-size: 2.8rem;
+        }
+
+        #contact p{
+            color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+
+        #contact .connectWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+            gap: 1rem;
+        }
+
+        #contact .connectWrapper .address{
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+        }
+    
+        #contact .connectWrapper .address h3{
+            color: #eac308;
+            font-size: 1.4rem;
+        }
+    
+        #contact .connectWrapper .address h3 i{
+            color: #fff;
+            font-size: 1.2rem;
+            margin-left: .5rem;
+        }
+
+        #contact .connectWrapper .contactForm h2{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    #contact .connectWrapper .contactForm h2 b{
+        color: #eac308;
+        font-size: 1.8rem;
+    }
+
+    #contact .connectWrapper .contactForm form button{
+        border: none;
+        border-radius: .4rem;
+        color: #fff;
+        background-color: #eac308;
+        padding: .7rem 1rem .7rem 1rem;
+        width: 30%;
+        font-size: 1.2rem;
+    }
     }
