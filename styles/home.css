@@ -1,3 +1,11 @@
+.homeWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
 /* Home section left part wich contains text and Contact me button */
 .homeWrapper .homeText{
     display: flex;
@@ -14,7 +22,7 @@
   
   .homeWrapper .homeText h1{
     color: #fff;
-    font-size: 64px;
+    font-size: 3rem;
   }
   
   .homeWrapper .homeText p{
@@ -53,171 +61,78 @@
     width: 100%;
     height: 100%;
   }
-
-  @media (min-width: 1280px) {
-    /* Styles of home section */
-    .homeWrapper {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: space-between;
-        height: 80vh;
-        margin-top: 100px;
+  @media (max-width: 1200px){
+    .homeWrapper .homeImage{
+  
+      width: 30%;
     }
 
-    /* Home section left part wich contains text and Contact me button */
-    .homeWrapper .homeText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 50%;
-        gap: 10px;
+  }
+  @media (max-width: 887px){
+    .homeWrapper .homeImage{
+  
+      width: 35%;
     }
 
-    .homeWrapper .homeText span {
-        color: #EAB308;
-        font-size: 24px;
-    }
-
-    .homeWrapper .homeText h1 {
-        color: #fff;
-        font-size: 64px;
-    }
-
-    .homeWrapper .homeText p {
-        font-size: 22px;
-        color: #fff;
-    }
-
-    /* The contact me button as a reusable button */
-    .contactMe {
-        color: #fff;
-        background-color: #EAB308;
-        width: 15%;
-        border: none;
-        padding: 1rem;
-        font-size: 15px;
-        font-weight: 600;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    /* Hme section right part wich contains an image */
-
-    .homeWrapper .homeImage {
-
-        width: 28%;
-    }
-
-    .homeWrapper .homeImage .imageContainer {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .homeWrapper .homeImage .imageContainer img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
   }
 
-  /* for the screen size minimum width is 1024 px */
-@media (min-width: 1024px) {
-    /* Styles of home section */
-    .homeWrapper {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        justify-content: space-between;
-        height: 80vh;
-        margin-top: 100px;
+  @media (max-width: 767px){
+
+    .homeWrapper{
+      margin-top: 3.5rem;
     }
 
-    /* Home section left part wich contains text and Contact me button */
-    .homeWrapper .homeText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 50%;
-        gap: 10px;
+    .homeWrapper .homeText h1{
+      color: #fff;
+      font-size: 2rem;
+    } 
+  }
+
+  @media (max-width: 640px){
+    .homeWrapper{
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .homeWrapper .homeText span {
-        color: #EAB308;
-        font-size: 24px;
+    .homeWrapper .homeText{
+      width: 100%;
+      align-items: center;
+      padding: 20px;
     }
 
-    .homeWrapper .homeText h1 {
-        color: #fff;
-        font-size: 64px;
+    .homeWrapper .homeImage .imageContainer{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
     }
 
-    .homeWrapper .homeText p {
-        font-size: 22px;
-        color: #fff;
-    }
+    .homeWrapper .homeImage{
+      width: 60%;
+  }
+  .homeWrapper .homeText h1{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  } 
+  .homeWrapper .homeText p{
+    font-size: 17px;
+    color: #fff;
+  }
+  .homeWrapper .homeText span{
+    color: #EAB308;
+    font-size: 25px;
+    text-align: center;
+  }
 
-    /* The contact me button as a reusable button */
-    .contactMe {
-        color: #fff;
-        background-color: #EAB308;
-        width: 15%;
-        border: none;
-        padding: 8px;
-        font-size: 15px;
-        font-weight: 600;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    /* Hme section right part wich contains an image */
-
-    .homeWrapper .homeImage {
-
-        width: 28%;
-    }
-
-    .homeWrapper .homeImage .imageContainer {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .homeWrapper .homeImage .imageContainer img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* for the screensize of minimum width is 768 px */
-@media (min-width: 768px) {
-    .homeWrapper {
-        padding-top: 15rem;
-        margin-top: 0px;
-    }
-
-    .homeWrapper .homeText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 50%;
-        gap: 10px;
-    }
-
-    .homeWrapper .homeText span {
-        color: #EAB308;
-        font-size: 24px;
-    }
-
-    .homeWrapper .homeText h1 {
-        color: #fff;
-        font-size: 50px;
-    }
-
-    .homeWrapper .homeText p {
-        font-size: 22px;
-        color: #fff;
-    }
+  .contactMe{
+    color: #fff;
+    background-color: #EAB308;
+    width: 25%;
+    border: none;
+    padding: 8px;
+    font-size: .8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 }

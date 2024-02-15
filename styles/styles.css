@@ -7,6 +7,11 @@
 
 body{
   background-color: #111827;
+  width: 100vw;
+}
+
+img{
+  width: 100%;
 }
 
 /* The container of navbar and navlinks */
@@ -23,6 +28,9 @@ header {
   z-index: 100;
 }
 
+main{
+  width: 100vw;
+}
 /* The logo of my brand  */
 .logo {
   font-size: 20px;
@@ -72,13 +80,38 @@ nav a.active {
 
 /* styles of all sections */
 section {
-  min-height: 100vh;
-  padding-left: 6rem;
-  padding-right: 6rem;
+  min-height: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 section:nth-child(even){
   background-color: #020617;
 }
 
+@media (max-width: 1200px){
+
+  section {
+    min-height: 100vh;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 887px){
+  
+
+}
+
+@media (max-width: 640px){
+  nav{
+    display: none;
+  }
+  .logo{
+    width: 30%;
+  }
+
+  header{
+    padding: 10px 70px;
+  }
+}
 

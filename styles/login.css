@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+
     #login{
         display: flex;
         flex-direction: column;
@@ -63,4 +63,3 @@
         color: #EAC308;
         cursor: pointer;
     }
-}
