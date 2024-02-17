@@ -112,6 +112,7 @@ section:nth-child(even){
 
   header{
     padding: 10px 70px;
+    position: fixed;
   }
 }
 
