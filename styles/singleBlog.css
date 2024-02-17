@@ -1,0 +1,116 @@
+.blogWrapper{
+    margin-top: 10rem;
+
+}
+
+.blogWrapper h1{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.blogWrapper .blogside{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2rem 2rem 2rem 0rem;
+
+}
+
+.blogWrapper .blogside .img{
+    width: 40%;
+}
+
+.blogWrapper .blogside .blogText{
+    width: 50%;
+}
+
+.blogWrapper .blogside .reaction{
+    display: flex;
+}
+
+.blogWrapper .blogside .blogText{
+    color: #fff;
+}
+
+/* Likes and comments section */
+
+.commentWraper{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.blogside .reaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5rem;
+    margin-top: .5rem;
+    padding: 0.3rem 1rem;
+}
+
+.blogside .reaction .comment{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .4rem;
+}
+
+.blogside .reaction .likes{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: end;
+}
+
+.blogside .reaction .comment img{
+    width: 10%;
+}
+
+.blogside .reaction .likes img{
+    width: 10%;
+}
+
+
+
+/* Add comment section */
+.blogside .myComments{
+    display: flex;
+    align-items: center;    
+    border: .12rem solid #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: .6rem;
+    gap: 1rem;
+}
+
+.blogside .myComments .commentSection{
+    flex: 1;
+}
+
+.blogside .myComments .commentSection form{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.blogside .myComments .commentSection form input{
+    flex: 1;
+    padding: .7rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.blogside .myComments .commentSection form button{
+    border: none;
+    padding: .5rem .85rem;
+    background-color: #EAB308;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 2rem;
+}

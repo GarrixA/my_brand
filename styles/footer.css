@@ -1,0 +1,33 @@
+footer{
+    background-color: #020617;
+    padding: 1rem 4rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    gap: 10rem;
+}
+
+.socials .image{
+    width: 10%;
+}
+
+.socials .image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.socials .links{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media (max-width: 640px){
+    footer{
+        display: none;
+    }
+}

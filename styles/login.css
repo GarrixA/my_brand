@@ -66,3 +66,16 @@
         color: #EAC308;
         cursor: pointer;
     }
+
+    @media (max-width: 640px){
+        #login .loginWrapper{
+            width: 100%;
+        }
+
+        #login .loginWrapper form{
+            display: flex;
+            flex-direction: column;
+            padding: 0rem 2rem;
+            gap: 1rem;
+        }
+    }
