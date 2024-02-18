@@ -65,6 +65,12 @@
         font-size: .89rem;
         margin: 0rem 1rem 0rem 1rem;
     }
+    #blogs .blogsContainer .blog a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
 
     /* blogs button */
     #blogs .blogsContainer .blog button{
@@ -108,5 +114,11 @@
 
         #blogs .blogsContainer .blog:first-child{
             display: flex;
+        }
+    }
+
+    @media (max-width: 414px){
+        #blogs{
+            min-height: 85vh;
         }
     }

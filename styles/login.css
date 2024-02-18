@@ -79,3 +79,9 @@
             gap: 1rem;
         }
     }
+
+    @media (max-width: 414px){
+       #login{
+        min-height: 55vh;
+       }
+      }

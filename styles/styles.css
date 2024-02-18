@@ -116,3 +116,15 @@ section:nth-child(even){
   }
 }
 
+@media (max-width: 414px){
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  header{
+    padding: 10px 40px;
+    position: fixed;
+  }
+}
+

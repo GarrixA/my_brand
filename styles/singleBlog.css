@@ -114,3 +114,98 @@
     font-size: 1rem;
     border-radius: 2rem;
 }
+
+@media (max-width: 1200px){
+    .blogWrapper h1{
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    .blogWrapper .blogside{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: start;
+        padding: 2rem 2rem 2rem 0rem;
+    
+    }
+
+    .blogWrapper .blogside .img{
+        width: 50%;
+    }
+    .blogWrapper .blogside .blogText{
+        width: 70%;
+    }
+
+    .blogWrapper{
+        margin-top: 8rem;
+    
+    }
+}
+
+@media (max-width: 1024px){
+    .blogWrapper h1{
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .blogWrapper .blogside{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 2rem 2rem 2rem 0rem;
+    
+    }
+    .blogWrapper .blogside .img{
+        width: 100%;
+        height: 25rem;
+    }
+
+    .blogWrapper .blogside .img img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .blogWrapper .blogside .blogText{
+        width: 100%;
+    }
+
+    .blogWrapper{
+        margin-top: 7rem;
+    
+    }
+}
+
+@media (max-width: 767px){
+    .blogWrapper .blogside .img{
+        width: 100%;
+        height: 18rem;
+    }
+
+    .blogWrapper{
+        margin-top: 7rem;
+    
+    }
+}
+
+@media (max-width: 640px){
+    .blogWrapper .blogside .img{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .blogWrapper{
+        margin-top: 5rem;
+    
+    }
+    .blogside .myComments .commentSection form button{
+        border: none;
+        padding: .3rem .6rem;
+        background-color: #EAB308;
+        color: #fff;
+        font-size: .70rem;
+        border-radius: 1rem;
+    }
+}
