@@ -163,4 +163,16 @@
   .homeWrapper .homeImage{
     width: 95%;
 }
+
+.contactMe {
+  color: #fff;
+  background-color: #EAB308;
+  width: 100%;
+  border: none;
+  padding: 8px;
+  font-size: .8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
 }

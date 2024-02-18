@@ -1,172 +1,171 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+}
 
-    #contact{
+#contact h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#contact h1 b {
+    color: #eac308;
+    font-size: 3.4rem;
+}
+
+#contact p {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .50rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+
+}
+
+/* The address and the contact form */
+#contact .connectWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+#contact .connectWrapper .address {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+#contact .connectWrapper .address h3 {
+    color: #eac308;
+    font-size: 2rem;
+}
+
+#contact .connectWrapper .address h3 i {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+/* the get in touch form */
+#contact .connectWrapper .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact .connectWrapper .contactForm h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+#contact .connectWrapper .contactForm h2 b {
+    color: #eac308;
+    font-size: 2.4rem;
+}
+
+#contact .connectWrapper .contactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact .connectWrapper .contactForm form input {
+    padding: .6rem;
+    border-radius: .2rem;
+    border: none;
+    font-style: italic;
+}
+
+#contact .connectWrapper .contactForm form textarea {
+    padding: .6rem;
+    border-radius: .2rem;
+    border: none;
+    font-style: italic;
+}
+
+#contact .connectWrapper .contactForm form button {
+    border: none;
+    border-radius: .4rem;
+    color: #fff;
+    background-color: #eac308;
+    padding: .7rem 1rem .7rem 1rem;
+    width: 25%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 640px) {
+    #contact .connectWrapper {
         display: flex;
         flex-direction: column;
     }
 
-    #contact h1{
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact h1 {
         color: #fff;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-top: 3rem;
         text-align: center;
     }
 
-    #contact h1 b{
+    #contact h1 b {
         color: #eac308;
-        font-size: 3.4rem;
+        font-size: 2.8rem;
     }
 
-    #contact p{
+    #contact p {
         color: #fff;
         margin-left: auto;
         margin-right: auto;
-        padding: .50rem;
         font-size: 1.4rem;
         margin-top: 1rem;
-
     }
 
-    /* The address and the contact form */
-    #contact .connectWrapper{
+    #contact .connectWrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 5rem;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
     }
 
-    #contact .connectWrapper .address{
+    #contact .connectWrapper .address {
         display: flex;
         flex-direction: column;
-        gap: .8rem;
+        gap: .4rem;
     }
 
-    #contact .connectWrapper .address h3{
+    #contact .connectWrapper .address h3 {
         color: #eac308;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
-    #contact .connectWrapper .address h3 i{
+    #contact .connectWrapper .address h3 i {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: .5rem;
     }
 
-    /* the get in touch form */
-    #contact .connectWrapper .contactForm{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    #contact .connectWrapper .contactForm h2{
-        color: #fff;
-        font-size: 2rem;
-    }
-
-    #contact .connectWrapper .contactForm h2 b{
-        color: #eac308;
-        font-size: 2.4rem;
-    }
-
-    #contact .connectWrapper .contactForm form{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    #contact .connectWrapper .contactForm form input{
-        padding: .6rem;
-        border-radius: .2rem;
-        border: none;
-        font-style: italic;
-    }
-
-    #contact .connectWrapper .contactForm form textarea{
-        padding: .6rem;
-        border-radius: .2rem;
-        border: none;
-        font-style: italic;
-    }
-
-    #contact .connectWrapper .contactForm form button{
-        border: none;
-        border-radius: .4rem;
-        color: #fff;
-        background-color: #eac308;
-        padding: .7rem 1rem .7rem 1rem;
-        width: 25%;
-        font-size: 1.2rem;
-    }
-
-    @media (max-width: 640px){
-        #contact .connectWrapper{
-            display: flex;
-            flex-direction: column;
-        }
-
-        #contact{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #contact h1{
-            color: #fff;
-            font-size: 2.5rem;
-            margin-top: 3rem;
-            text-align: center;
-        }
-    
-        #contact h1 b{
-            color: #eac308;
-            font-size: 2.8rem;
-        }
-
-        #contact p{
-            color: #fff;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 1.4rem;
-            margin-top: 1rem;
-        }
-
-        #contact .connectWrapper{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 2rem;
-            padding-bottom: 2rem;
-            gap: 1rem;
-        }
-
-        #contact .connectWrapper .address{
-            display: flex;
-            flex-direction: column;
-            gap: .4rem;
-        }
-    
-        #contact .connectWrapper .address h3{
-            color: #eac308;
-            font-size: 1.4rem;
-        }
-    
-        #contact .connectWrapper .address h3 i{
-            color: #fff;
-            font-size: 1.2rem;
-            margin-left: .5rem;
-        }
-
-        #contact .connectWrapper .contactForm h2{
+    #contact .connectWrapper .contactForm h2 {
         color: #fff;
         font-size: 1.5rem;
     }
 
-    #contact .connectWrapper .contactForm h2 b{
+    #contact .connectWrapper .contactForm h2 b {
         color: #eac308;
         font-size: 1.8rem;
     }
 
-    #contact .connectWrapper .contactForm form button{
+    #contact .connectWrapper .contactForm form button {
         border: none;
         border-radius: .4rem;
         color: #fff;
@@ -175,4 +174,56 @@
         width: 30%;
         font-size: 1.2rem;
     }
+}
+
+@media (max-width: 414px) {
+
+    /* The address and the contact form */
+    #contact .connectWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
     }
+    #contact .connectWrapper .contactForm form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+    }
+
+    #contact .connectWrapper .contactForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact .connectWrapper .address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .8rem;
+        width: 80%;
+    }
+
+    #contact .connectWrapper .contactForm form button {
+        border: none;
+        border-radius: .4rem;
+        color: #fff;
+        background-color: #eac308;
+        padding: .7rem 1rem .7rem 1rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #contact p {
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .50rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    
+    }
+}
