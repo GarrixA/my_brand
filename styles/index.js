@@ -45,3 +45,24 @@ navLinks.forEach(link => {
     scrollToSection(targetId);
   });
 });
+
+// toggle menu
+
+let menu = document.getElementById('menu')
+
+function toggleMenu() {
+  menu.classList.toggle('openMenu');
+  showMenu();
+}
+
+// hide and show menu
+
+function showMenu(){
+  let nav = document.getElementById('nav')
+
+  if(nav.style.display === 'flex'){
+    nav.style.display = 'none';
+  }else{
+    nav.style.display = 'flex';
+  }
+}
