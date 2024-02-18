@@ -180,3 +180,13 @@
             margin-top: 1rem;
         }
     }
+
+    @media (max-width: 414px){
+        
+        .skillsProgress{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem 5rem;
+            margin-top: 3rem;
+        }
+    }

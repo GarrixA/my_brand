@@ -116,3 +116,9 @@
             display: flex;
         }
     }
+
+    @media (max-width: 414px){
+        #blogs{
+            min-height: 85vh;
+        }
+    }

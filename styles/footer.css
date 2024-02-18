@@ -1,33 +1,188 @@
-footer{
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    gap: 1.4rem;
+    color: #fff;
     background-color: #020617;
-    padding: 1rem 4rem;
 }
 
-.socials{
+/* All heading one should have the same font-size */
+footer h1 {
+    font-size: 1.2rem;
+}
+
+/* All links and hyper links should not be underlined and has text color of white */
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* The top part of footer */
+footer .topFooter {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    color: #fff;
-    gap: 10rem;
+    gap: 1rem;
 }
 
-.socials .image{
-    width: 10%;
+/* The first elemen of top footer */
+footer .topFooter .me {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex: 1;
+    gap: .8rem;
+    margin-top: .5rem;
 }
 
-.socials .image img{
+/* The first elemen logo of top footer */
+footer .topFooter .me .logo {
+    width: 45%;
+}
+
+footer .topFooter .me img {
     width: 100%;
     object-fit: contain;
 }
 
-.socials .links{
+/* The third element of the top footer */
+footer .topFooter .followMe {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
-@media (max-width: 640px){
-    footer{
-        display: none;
+/* The items of third element of the top footer */
+footer .topFooter .followMe .links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .topFooter .followMe .links a {
+    width: 20%;
+}
+
+/* This is now the second element of the top footer */
+footer .topFooter .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: .70rem;
+    flex: 1;
+    margin-top: 2rem;
+}
+
+/* The second element input of the top footer */
+footer .topFooter .subscribe input {
+    padding: .50rem;
+    font-size: 1rem;
+    font-style: italic;
+    background-color: transparent;
+    border: .12rem solid #fff;
+    color: #fff;
+}
+
+/* The second element button of the top footer */
+footer .topFooter .subscribe button {
+    padding: .50rem .30rem;
+    font-size: 1rem;
+    font-style: italic;
+    cursor: pointer;
+    background-color: #864f59;
+    border: none;
+    border-radius: .20rem;
+    color: #fff;
+}
+
+/* The last element of the top footer */
+footer .topFooter .callMe {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+/* The copyright part */
+footer .bottomFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: .12rem solid #fff;
+    padding: .60rem 0rem;
+    margin-top: .50rem;
+}
+
+/* The responsiveness part */
+@media (max-width: 640px) {
+    footer {
+        padding: 1rem 3rem;
     }
+
+    /* The top part of footer */
+    footer .topFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* The first elemen of top footer */
+    footer .topFooter .me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .topFooter .me p {
+        text-align: center;
+    }
+
+    /* All heading one should have the same font-size and alignment*/
+    footer h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* This is now the second element of the top footer */
+    footer .topFooter .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: .70rem;
+        flex: none;
+        margin-top: 0rem;
+    }
+
+    /* The second element "form" of the top footer */
+    footer .topFooter .subscribe form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    /* The copyright side */
+    footer .bottomFooter{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.4rem 0rem;
+    }
+}
+
+@media (max-width: 414px){
+    footer{
+        padding-bottom: 18rem;
+    }   
 }
