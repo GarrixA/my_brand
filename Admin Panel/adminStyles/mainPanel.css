@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #111827;
+}
+
+section{
+    height: 100vh;
+}
+
+.AdminPanelWraper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.AdminPanelWraper .sideBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #020617;
+    z-index: 10;
+}
+
+.AdminPanelWraper .sideBar .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+.AdminPanelWraper .sideBar .profile .img{
+    width: 30%;
+}
+.AdminPanelWraper .sideBar .profile .img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.dashboard, 
+.blogs, 
+.Users{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.AdminPanelWraper .sideBar .navigations .dashboard h1{
+    font-size: 1.3rem;
+    color: #EAB308;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations
+.blogs h1, 
+.Users h1{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+.AdminPanelWraper .sideBar .navigations 
+.dashboard .icon, 
+.blogs .icon, 
+.Users .icon{
+    width: 10%;
+}
+.AdminPanelWraper .sideBar .navigations 
+.dashboard .icon img, 
+.blogs .icon img, 
+.Users .icon img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Rwight side on the top */
+.AdminPanelWraper .topRightBar{
+    width: 85%;
+    height: 100%;
+    background-color: #111827;
+    position: relative;
+    left: 15%;
+    height: fit-content;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #111827;
+    box-shadow: 0rem .2rem .5rem .4rem #020617;
+    color: #fff;
+    position: fixed;
+    width: 85%;
+}
+
+/* the sun icon and person icon */
+.AdminPanelWraper .topRightBar .adminNavbar .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar .icons 
+.sun, 
+.user{
+    width: 30%;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar .icons 
+.sun img, 
+.user img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* The body contents */
+.AdminPanelWraper .RightSideBody{
+    margin: 8rem 3.5rem;
+}
+
+/* the cards */
+.AdminPanelWraper .RightSideBody .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.AdminPanelWraper .RightSideBody .cards .blogsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AdminPanelWraper .RightSideBody .cards 
+    .blogsCard,
+    .likesCard,
+    .commentsCard{
+        background-color: #020617;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: .2rem;
+    }
+
+.AdminPanelWraper .RightSideBody .cards 
+    .blogsCard .top,
+    .likesCard .top,
+    .commentsCard .top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .76rem;
+        padding: .6rem .4rem;
+        color: #fff;
+    }
+
+.AdminPanelWraper .RightSideBody .cards 
+    .blogsCard .bottom, 
+    .likesCard .bottom, 
+    .commentsCard .bottom {
+        font-size: 2rem;
+        color: #fff;
+        padding: 1rem .8rem;
+        width: 100%;
+        display: flex;
+
+    }
+    
+.AdminPanelWraper .RightSideBody .cards 
+    .blogsCard .bottom span,
+    .likesCard .bottom span,
+    .commentsCard .bottom span{
+        font-size: 3rem;
+        color: #fff;
+        background-color: #EAB308;
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        padding: 0rem 6rem;
+        border-radius: .12rem;
+    }
+
+.AdminPanelWraper .RightSideBody .cards 
+    .blogsCard .top .icon,
+    .likesCard .top .icon,
+    .commentsCard .top .icon{
+        width: 20%;
+    }
+
+.AdminPanelWraper .RightSideBody .cards 
+    .blogsCard .top .icon img,
+    .likesCard .top .icon img,
+    .commentsCard .top .icon img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* charts will go here */
+

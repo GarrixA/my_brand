@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: ; */
 }
 
 body {
@@ -116,6 +115,10 @@ section:nth-child(even) {
 @media (max-width: 887px) {}
 
 @media (max-width: 640px) {
+  section{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
   nav {
     display: none;
   }
