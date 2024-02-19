@@ -1,6 +1,6 @@
 .blogWrapper{
     margin-top: 10rem;
-
+    position: relative;
 }
 
 .blogWrapper h1{
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    align-items: center;
+    align-items: start;
     padding: 2rem 2rem 2rem 0rem;
 
 }
@@ -27,6 +27,7 @@
 
 .blogWrapper .blogside .reaction{
     display: flex;
+    border-bottom: .12rem solid #020617;
 }
 
 .blogWrapper .blogside .blogText{
@@ -38,6 +39,44 @@
 .commentWraper{
     padding: 1rem;
     border-radius: 1rem;
+}
+
+
+.commentWraper .oneComment .wraper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .60rem;
+    margin: 1rem .7rem;
+    border-radius: 1rem;
+}
+
+.commentWraper .oneComment .contents{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    box-shadow: .12rem .12rem .12rem .12rem #020617;
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+}
+
+.commentWraper .oneComment .contents h1{
+    font-size: 1rem;
+}
+.commentWraper .oneComment .contents p{
+    font-size: .74rem;
+}
+.commentWraper .oneComment .contents .actions span{
+    font-size: .74rem;
+    color: #133bec;
+    cursor: pointer;
+}
+.commentWraper .oneComment .oneImage{
+    width: 10%;
+}
+.commentWraper .oneComment .oneImage img{
+    width: 100%;
+    object-fit: contain;
 }
 
 .blogside .reaction{
@@ -207,5 +246,9 @@
         color: #fff;
         font-size: .70rem;
         border-radius: 1rem;
+    }
+
+    .commentWraper .oneComment .oneImage{
+        width: 20%;
     }
 }
