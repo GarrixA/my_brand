@@ -144,5 +144,68 @@ section{
 
 /* The body contents */
 
+.AdminPanelWraper .topRightBar .RightSideBody{
+    margin: 7rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
 
+
+/* these things above the table  */
+.AdminPanelWraper .topRightBar .RightSideBody .aboveTable{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .4rem;
+}
+
+.AdminPanelWraper .topRightBar .RightSideBody .aboveTable h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.AdminPanelWraper .topRightBar .RightSideBody .aboveTable .addBlog button{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #EAB308;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+/* styles for table */
+.AdminPanelWraper .topRightBar .RightSideBody table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #020617;
+    overflow: hidden;
+  }
+
+  .AdminPanelWraper .topRightBar .RightSideBody th, td{
+    text-align: start;
+    padding: .4rem;
     
+  }
+
+  .AdminPanelWraper .topRightBar .RightSideBody td{
+    background-color: #fff;
+    border-bottom: .12rem solid #252525;   
+    padding: 1rem 1.2rem;
+  }
+
+  .AdminPanelWraper .topRightBar .RightSideBody th{
+    background-color: #020617;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .AdminPanelWraper .topRightBar .RightSideBody td span img{
+    width: 25%;
+    cursor: pointer;
+  }
