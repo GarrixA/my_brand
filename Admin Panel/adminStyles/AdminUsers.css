@@ -68,17 +68,27 @@ section{
 }
 
 .AdminPanelWraper .sideBar .navigations
+.dashboard a,
+.Users a, 
+.blogs a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations
 .dashboard h1, 
 .blogs h1{
     font-size: 1.3rem;
     color: #fff;
     cursor: pointer;
 }
+
+
 .AdminPanelWraper .sideBar .navigations 
 .dashboard .icon, 
 .blogs .icon, 
 .Users .icon{
-    width: 10%;
+    width: 15%;
 }
 .AdminPanelWraper .sideBar .navigations 
 .dashboard .icon img, 
@@ -139,6 +149,3 @@ section{
 }
 
 /* the cards */
-
-
-    

@@ -184,6 +184,10 @@ section:nth-child(even) {
     display: none;
   }
 
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
   #nav {
     display: flex;
     flex-direction: column;
