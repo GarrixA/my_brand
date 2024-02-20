@@ -74,11 +74,20 @@ section{
     color: #fff;
     cursor: pointer;
 }
+
+.AdminPanelWraper .sideBar .navigations
+.dashboard a,
+.blogs a, 
+.Users a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .AdminPanelWraper .sideBar .navigations 
 .dashboard .icon, 
 .blogs .icon, 
 .Users .icon{
-    width: 10%;
+    width: 15%;
 }
 .AdminPanelWraper .sideBar .navigations 
 .dashboard .icon img, 
