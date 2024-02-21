@@ -3,6 +3,8 @@
     #portfolio {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
      /* Presantation texts */
      #portfolio h1{
@@ -146,11 +148,12 @@
 
 
     .imgContainer{
-        width: 100%;
-        height: 100vh;
+        width: 80%;
+        height: 80vh;
         overflow: hidden;
-        margin: 50px;
         position: relative;
+        border: 2rem solid #fff;
+        border-radius: 1rem;
     }
 
     .imgContainer .list .item{
@@ -209,14 +212,14 @@
         bottom: 50px;
         left: 50%;
         width: max-content;
-        z-index: 100;
+        z-index: 99;
         display: flex;
         gap: 20px;
     }
 
     .Thumbnail .item{
-        width: 150px;
-        height: 220px;
+        width: 200px;
+        height: 350px;
         flex-shrink: 0;
         position: relative;
     }
@@ -226,32 +229,41 @@
         height: 100%;
         object-fit: cover;
         border-radius: 15px;
+        box-shadow: 0 10px 20px 0;
     }
 
     .Thumbnail .item .contents{
         position: absolute;
-        bottom: 10px;
+        top: 10px;
         left: 10px;
         right: 10px;
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 800;
+        text-align: center;
+        background-color: #2965F1;
+        border-radius: .2rem;
+        text-shadow: 0 10px 15px 0;
     }
 
     /* the arrows */
     .arrows{
         position: absolute;
-        top: 80%;
+        top: 70%;
         right: 40%;
         width: 300px;
         max-width: 30%;
         display: flex;
         gap: 10px;
         align-items: center;
+        z-index: 100;
     }
 
     .arrows button{
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background-color: #eee4;
+        background-color: rgb(0, 0, 0);
         border: none;
         font-family: monospace;
         color: #EAB308;
@@ -263,9 +275,10 @@
     }
 
     .arrows button:hover{
-        background-color: #020617;
+        background-color: #2965F1;
         font-family: monospace;
         color: #ffff;
+        scale: 1.2;
     }
 
     /* functionalitioes */
@@ -306,6 +319,118 @@
         height: 220px;
         position: absolute;
         left: 50%;
-        bottom: 50px;
+        /* bottom: 50px; */
         border-radius: 15px;
+        animation: showImage 0.5s linear 1 forwards;
+    }
+
+    @keyframes showImage{
+        to{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            border-radius: 0;
+        }
+    }
+
+    .imgContainer.next .Thumbnail .item:nth-last-child(1){
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        animation: showThumb 0.5s linear 1 forwards;
+    }
+
+    @keyframes showThumb{
+        to{
+            width: 150px;
+        }
+    }
+
+    .imgContainer.next .Thumbnail{
+        transform: translateX(150px);
+        animation: transformThumb .5s linear 1 forwards;
+    }
+
+    @keyframes transformThumb{
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    /* previous button */
+    .imgContainer.prev .list .item:nth-child(2){
+        z-index: 2;
+    }
+
+    .imgContainer.prev .list .item:nth-child(2) img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: outImage .5s linear 1 forwards;
+    }
+
+    @keyframes outImage{
+        to{
+            width: 150px;
+            height: 220px;
+            border-radius: 15px;
+            left: 50%;
+            bottom: 50px;
+        }
+    }
+
+    .imgContainer.prev .Thumbnail .item:nth-child(1){
+        width: 0;
+        overflow: hidden;
+        opacity: 0;
+        animation: showThumb .5s linear 1 forwards;
+    }
+
+    .imgContainer.prev .list .item:nth-child(2) .name,
+    .imgContainer.prev .list .item:nth-child(2) .desc,
+    .imgContainer.prev .list .item:nth-child(2) button{
+        animation: countOut 1.5s linear 1 forwards;
+    }
+
+    @keyframes countOut{
+        to{
+            transform: translateY(-150px);
+            filter: blur(20px);
+            opacity: 0;
+        }
+    }
+
+    .imgContainer.next .arrows button,
+    .imgContainer.prev .arrows button{
+        pointer-events: none;
+    }
+
+    /* time */
+    .time{
+        width: 0%;
+        height: 5px;
+        background-color: #EAB308;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+
+    .imgContainer.prev .time,
+    .imgContainer.next .time{
+        width: 100%;
+        animation: timeRunning 2.5s linear 1 forwards;
+    }
+
+    @keyframes timeRunning{
+        to{
+            width: 0;
+        }
+    }
+
+    @media (max-width: 678px){
+        .imgContainer .list .contents{
+            padding-right: 0;
+        }
     }
