@@ -184,6 +184,7 @@ section{
     border-top-right-radius: .5rem;
     background-color: #020617;
     overflow: hidden;
+    white-space: nowrap;
   }
 
   .AdminPanelWraper .topRightBar .RightSideBody th, td{
@@ -208,4 +209,10 @@ section{
   .AdminPanelWraper .topRightBar .RightSideBody td span img{
     width: 25%;
     cursor: pointer;
+  }
+
+  tr:hover{
+    background-color: #dddddd;
+    z-index: 9;
+    opacity: .5;
   }
