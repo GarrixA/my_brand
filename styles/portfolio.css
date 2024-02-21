@@ -143,3 +143,169 @@
         width: 2rem;
     }
     }
+
+
+    .imgContainer{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        margin: 50px;
+        position: relative;
+    }
+
+    .imgContainer .list .item{
+        position: absolute;
+        inset: 0 0 0 0;
+    }
+
+    .imgContainer .list .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .imgContainer .list .contents{
+        position: absolute;
+        top: 20%;
+        width: 1140px;
+        max-width: 80%;
+        left: 20%;
+        transform: translateX(-50);
+        padding-right: 30%;
+        box-sizing: border-box;
+        color: #fff;
+        text-shadow: 0 50px 10px #0004;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+
+    .imgContainer .list .contents .name{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    .imgContainer .list .contents .desc{
+        font-size: 1.2rem;
+        font-weight: 600;
+        
+    }
+
+    .imgContainer .list .contents button{
+        font-size: 1.5rem;
+        font-weight: 700;
+        border: none;
+        background-color: #EAB308;
+        padding: .5rem 1rem;   
+        width: 25%;
+        border-radius: .5rem;
+        color: #fff;
+        cursor: pointer;     
+    }
+
+    /* The thumbnail */
+    .Thumbnail{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        width: max-content;
+        z-index: 100;
+        display: flex;
+        gap: 20px;
+    }
+
+    .Thumbnail .item{
+        width: 150px;
+        height: 220px;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .Thumbnail .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .Thumbnail .item .contents{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    /* the arrows */
+    .arrows{
+        position: absolute;
+        top: 80%;
+        right: 40%;
+        width: 300px;
+        max-width: 30%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .arrows button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #eee4;
+        border: none;
+        font-family: monospace;
+        color: #EAB308;
+        font-weight: bold;
+        font-size: 3rem;
+        transition: .5s;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .arrows button:hover{
+        background-color: #020617;
+        font-family: monospace;
+        color: #ffff;
+    }
+
+    /* functionalitioes */
+    .imgContainer .list .item:nth-child(1){
+        z-index: 1;
+    }
+
+    .imgContainer .list .item:nth-child(1) .name,
+    .imgContainer .list .item:nth-child(1) .desc,
+    .imgContainer .list .item:nth-child(1) button{
+        transform: translateY(50px);
+        filter: blur(20px);
+        opacity: 0;
+        animation: displayIt .5s 1s linear 1 forwards;
+    }
+
+    @keyframes displayIt{
+        to{
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+    }
+
+    .imgContainer .list .item:nth-child(1) .name{
+        animation-delay: 1.2s;
+    }
+    .imgContainer .list .item:nth-child(1) .desc{
+        animation-delay: 1.4s;
+    }
+    .imgContainer .list .item:nth-child(1) button{
+        animation-delay: 1.6s;
+    }
+
+    /* clicks */
+    .imgContainer.next .list .item:nth-child(1) img{
+        width: 150px;
+        height: 220px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        border-radius: 15px;
+    }
