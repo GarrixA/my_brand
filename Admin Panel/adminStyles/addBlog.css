@@ -62,30 +62,29 @@ section{
     color: #fff;
 }
 
-.AdminPanelWraper .sideBar .navigations .Users h1{
+.AdminPanelWraper .sideBar .navigations .blogs h1{
     font-size: 1.3rem;
     color: #EAB308;
     cursor: pointer;
 }
 
 .AdminPanelWraper .sideBar .navigations
-.dashboard a,
-.AdminMessage a,
-.Users a, 
-.blogs a{
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.AdminPanelWraper .sideBar .navigations
 .dashboard h1, 
 .AdminMessage h1,
-.blogs h1{
+.Users h1{
     font-size: 1.3rem;
     color: #fff;
     cursor: pointer;
 }
 
+.AdminPanelWraper .sideBar .navigations
+.dashboard a,
+.AdminMessage a,
+.blogs a, 
+.Users a{
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .AdminPanelWraper .sideBar .navigations 
 .dashboard .icon,
@@ -148,63 +147,112 @@ section{
 
 
 /* The body contents */
-.AdminPanelWraper .RightSideBody{
-    margin: 8rem 3.5rem;
+
+.AdminPanelWraper .topRightBar .RightSideBody{
+    margin: 7rem 4rem;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Table */
-.tableWrapper{
-    overflow: auto;
+
+/* form */
+.formWrapper{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-table th{
-    position: sticky;
-    top: 0;
-    background-color: #020617;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 1rem 2rem;
-}
-
-tr td{
-    background-color: #fff;
-    padding: .4rem 2rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-tr:hover td{
+.formWrapper h1{
     background-color: #0358ad;
     color: #fff;
-    cursor: pointer;
-    scale: 1.1;
-    /* transform: translateY(1px); */
-    transition: .5s ease-out;
-}
-
-tr td button{
-    background-color: transparent;
-    border: none;
-    width: 1.6rem;
-    margin-left: 1rem;
-}
-
-tr td button img{
+    font-size: 2rem;
     width: 100%;
-    object-fit: cover;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
-th, td{
-    border-bottom: #020617 solid .12rem;
-    text-align: start;
+.formWrapper form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem 0rem;
+    gap: 3rem;
+    width: 100%;
+    background-color: #020617;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: #fff;
+    align-items: center;
+}
+
+.formWrapper form .image{
+    border-radius: 2rem;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827;
+    border: #EAB308 .3rem dashed;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.formWrapper form .image:hover {
+    transform: rotate(360deg);
+}
+
+.formWrapper form .image:active {
+    scale: 1.2;
+}
+
+.formWrapper form .image input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formWrapper form 
+.image, 
+.Title, 
+.description, 
+.date{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .2rem 0rem;
+}
+
+.formWrapper form 
+.image input, 
+.Title input,  
+.date input{
+    padding: .6rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.formWrapper form  .description .submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.formWrapper form  .description .submit button{
+    width: 40%;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: #EAB308;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
 }

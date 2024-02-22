@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Admin Panel/adminStyles/AdminBlog.css">
+    <link rel="stylesheet" href="/Admin Panel/adminStyles/addBlog.css">
     <link rel="stylesheet" href="/Admin Panel/adminStyles/charts.css">
+    <script src="https://cdn.tiny.cloud/1/kg3033m6umoiuxxlhw6hqz4ewuw7kmed59rvsjo9cs8meel1/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
     <title>Admin</title>
 </head>
 
@@ -34,7 +36,7 @@
                         <div class="icon">
                             <img src="/images/cib_micro-blog-colored.svg" alt="blog">
                         </div>
-                        <a href="#">
+                        <a href="/Admin Panel/AdminBlog.html">
                             <h1>Blogs</h1>
                         </a>
                     </div>
@@ -72,49 +74,34 @@
                 </div>
 
                 <div class="RightSideBody">
-                    <div class="contentWraper">
-                        <div class="aboveTable">
-                            <h1>Blogs</h1>
-                            <div class="addBlog">
-                                <a href="/Admin Panel/addBlog.html"><button>Add blog</button></a>
+                    <div class="formWrapper">
+                        <h1>Add Blog</h1>
+                        <form>
+                            <div class="image">
+                                <label>Add Image</label>
+                                <input type="file" placeholder="place image">
                             </div>
-                        </div>
-                        <div class="tableWrapper">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Title</th>
-                                        <th>Date</th>
-                                        <th>Comments</th>
-                                        <th>Likes</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Manaki Jelsalem</td>
-                                        <td>11.02.2024</td>
-                                        <td>42</td>
-                                        <td>58</td>
-                                        <td>
-                                            <a href="/Admin Panel/editBlog.html"><button>
-                                                <img src="/Images/ic_baseline-edit.png" alt="">
-                                            </button></a>
-                                            <button>
-                                                <img src="/Images/mingcute_delete-fill.png" alt="">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <div class="Title">
+                                <label>Title</label>
+                                <input type="text" placeholder="add title">
+                            <div class="date">
+                                <label>Date</label>
+                                <input type="datetime-local" placeholder="chose date">
+                            </div>
+                            <div class="description">
+                                <label>Description</label>
+                                <textarea>Hello World!</textarea>
+                                <div class="submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="/Admin Panel/Editor.js"></script>
+    <script src="/Admin Panel/adminStyles/addblog.js"></script>
 </body>
 
 </html>
