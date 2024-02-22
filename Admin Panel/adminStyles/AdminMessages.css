@@ -50,8 +50,8 @@ section{
 
 .AdminPanelWraper .sideBar .navigations 
 .dashboard, 
-.AdminMessage,
-.blogs, 
+.blogs,
+.message, 
 .Users{
     display: flex;
     flex-direction: row;
@@ -62,33 +62,33 @@ section{
     color: #fff;
 }
 
-.AdminPanelWraper .sideBar .navigations .blogs h1{
+.AdminPanelWraper .sideBar .navigations .Users h1{
     font-size: 1.3rem;
     color: #EAB308;
     cursor: pointer;
 }
 
 .AdminPanelWraper .sideBar .navigations
-.dashboard h1, 
-.AdminMessage h1,
-.Users h1{
+.dashboard a,
+.Users a, 
+.message a,
+.blogs a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations
+.dashboard h1,
+.message h1, 
+.blogs h1{
     font-size: 1.3rem;
     color: #fff;
     cursor: pointer;
 }
 
-.AdminPanelWraper .sideBar .navigations
-.dashboard a,
-.AdminMessage a,
-.blogs a, 
-.Users a{
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .AdminPanelWraper .sideBar .navigations 
-.dashboard .icon,
-.AdminMessage .icon, 
+.dashboard .icon, 
 .blogs .icon, 
 .Users .icon{
     width: 15%;
@@ -147,76 +147,20 @@ section{
 
 
 /* The body contents */
+.AdminPanelWraper .RightSideBody{
+    margin: 8rem 3.5rem;
+}
 
-.AdminPanelWraper .topRightBar .RightSideBody{
-    margin: 7rem 4rem;
+/* the message body */
+
+.messageWrapper{
     display: flex;
-    flex-direction: column;
-}
-
-
-/* these things above the table  */
-.AdminPanelWraper .topRightBar .RightSideBody .aboveTable{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem .4rem;
-}
-
-.AdminPanelWraper .topRightBar .RightSideBody .aboveTable h1{
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-.AdminPanelWraper .topRightBar .RightSideBody .aboveTable .addBlog button{
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 700;
-    background-color: #EAB308;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: .2rem;
-    cursor: pointer;
-}
-
-/* styles for table */
-.AdminPanelWraper .topRightBar .RightSideBody table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    background-color: #020617;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .AdminPanelWraper .topRightBar .RightSideBody th, td{
-    text-align: start;
-    padding: .4rem;
-    
-  }
-
-  .AdminPanelWraper .topRightBar .RightSideBody td{
+    flex-direction: row;
     background-color: #fff;
-    border-bottom: .12rem solid #252525;   
-    padding: 1rem 1.2rem;
-  }
+    border-radius: 1rem;
+    width: 40%;
+}
 
-  .AdminPanelWraper .topRightBar .RightSideBody th{
-    background-color: #020617;
-    padding: 1rem 1.2rem;
-    font-size: 1.2rem;
-    color: #fff;
-  }
-
-  .AdminPanelWraper .topRightBar .RightSideBody td span img{
-    width: 25%;
-    cursor: pointer;
-  }
-
-  tr:hover{
-    background-color: #dddddd;
-    z-index: 9;
-    opacity: .5;
-  }
+.messageWrapper .details{
+    
+}

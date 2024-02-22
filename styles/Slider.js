@@ -1,33 +1,43 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const blogs = document.querySelectorAll('.blog');
-    let currentBlogIndex = 0;
+let nextDom = document.getElementById('next');
+let prevtDom = document.getElementById('prev');
+let carouselDom = document.querySelector('.imgContainer');
+let listItemDom = document.querySelector('.imgContainer .list');
+let thumbnailDom = document.querySelector('.imgContainer .Thumbnail')
 
-    // Function to show the current blogs
-    function showCurrentBlogs() {
-        for (let i = 0; i < blogs.length; i++) {
-            blogs[i].classList.remove('active');
-        }
-        for (let i = currentBlogIndex; i < currentBlogIndex + 2; i++) {
-            blogs[i].classList.add('active');
-        }
+nextDom.onclick = function(){
+    showSlider('next');
+}
+
+prevtDom.onclick = function(){
+    showSlider('prev')
+}
+
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+let runTimeOut;
+function showSlider(type){
+    let itemSlider = document.querySelectorAll('.imgContainer .list .item')
+    let itemThumbnail = document.querySelectorAll('.imgContainer .Thumbnail .item')
+
+    if(type === 'next'){
+        listItemDom.appendChild(itemSlider[0])
+        thumbnailDom.appendChild(itemThumbnail[0])
+        carouselDom.classList.add('next')
+    }else{
+        let positionLastItem = itemSlider.length - 1;
+        listItemDom.prepend(itemSlider[positionLastItem]);
+        thumbnailDom.prepend(itemThumbnail[positionLastItem]);
+        carouselDom.classList.add('prev')
     }
 
-    // Initial display of the first two blogs
-    showCurrentBlogs();
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(()=>{
+        carouselDom.classList.remove('next')
+        carouselDom.classList.remove('prev')
+    }, timeRunning)
 
-    // Function to handle next button click
-    document.getElementById('nextBtn').addEventListener('click', function () {
-        if (currentBlogIndex < blogs.length - 2) {
-            currentBlogIndex++;
-            showCurrentBlogs();
-        }
-    });
-
-    // Function to handle prev button click
-    document.getElementById('prevBtn').addEventListener('click', function () {
-        if (currentBlogIndex > 0) {
-            currentBlogIndex--;
-            showCurrentBlogs();
-        }
-    });
-});
+    clearTimeout(autoRunAnim);
+    autoRunAnim = setTimeout(()=>{
+        nextDom.onclick()
+    }, timeAutoNext)
+}
