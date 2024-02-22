@@ -151,4 +151,16 @@ section{
     margin: 8rem 3.5rem;
 }
 
-/* the cards */
+/* the message body */
+
+.messageWrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 40%;
+}
+
+.messageWrapper .details{
+    
+}
