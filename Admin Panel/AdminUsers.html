@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Admin Panel/adminStyles/AdminUsers.css">
     <link rel="stylesheet" href="/Admin Panel/adminStyles/charts.css">
-    <script src="https://cdn.tiny.cloud/1/kg3033m6umoiuxxlhw6hqz4ewuw7kmed59rvsjo9cs8meel1/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <title>Admin</title>
 </head>
 
@@ -27,25 +26,33 @@
                         <div class="icon">
                             <img src="/images/ic_outline-dashboard-white.svg" alt="dashboard">
                         </div>
-                        <a href="/Admin Panel/mainPanel.html"><h1 class="active">Dashboard</h1></a>
+                        <a href="/Admin Panel/mainPanel.html">
+                            <h1 class="active">Dashboard</h1>
+                        </a>
                     </div>
                     <div class="blogs">
                         <div class="icon">
                             <img src="/images/cib_micro-blog.svg" alt="blog">
                         </div>
-                        <a href="/Admin Panel/AdminBlog.html"><h1>Blogs</h1></a>
+                        <a href="/Admin Panel/AdminBlog.html">
+                            <h1>Blogs</h1>
+                        </a>
                     </div>
                     <div class="AdminMessage">
                         <div class="icon">
                             <img src="/Images/jam_messages-f.png" alt="messages">
                         </div>
-                        <a href="#"><h1>Messages</h1></a>
+                        <a href="/Admin Panel/AdminMessages.html">
+                            <h1>Messages</h1>
+                        </a>
                     </div>
                     <div class="Users">
                         <div class="icon">
                             <img src="/images/mdi_usersColored.png" alt="user">
                         </div>
-                        <a href="#"><h1>Users</h1></a>
+                        <a href="#">
+                            <h1>Users</h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -65,28 +72,40 @@
                 </div>
 
                 <div class="RightSideBody">
-                    <textarea>
-                        Welcome to TinyMCE!
-                      </textarea>
+                    
+                    <div class="tableWrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>User name</th>
+                                    <th>Email</th>
+                                    <th>Phone number</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mugisha</td>
+                                    <td>mugisha1</td>
+                                    <td>mugisha134@gmail.com</td>
+                                    <td>0789438437</td>
+                                    <td>
+                                        <button>
+                                            <img src="/Images/mingcute_delete-fill.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
             </div>
         </div>
 
     </section>
-    <script>
-        tinymce.init({
-          selector: 'textarea',
-          plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
-          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-          tinycomments_mode: 'embedded',
-          tinycomments_author: 'Author name',
-          mergetags_list: [
-            { value: 'First.Name', title: 'First Name' },
-            { value: 'Email', title: 'Email' },
-          ],
-          ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
-        });
-      </script>
+    
 </body>
 
 </html>

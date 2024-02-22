@@ -179,44 +179,64 @@ section{
     cursor: pointer;
 }
 
-/* styles for table */
-.AdminPanelWraper .topRightBar .RightSideBody table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
+/* Table */
+.tableWrapper{
+    overflow: auto;
+}
+
+table{
     width: 100%;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    background-color: #020617;
+    border-collapse: collapse;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     overflow: hidden;
     white-space: nowrap;
-  }
+}
 
-  .AdminPanelWraper .topRightBar .RightSideBody th, td{
-    text-align: start;
-    padding: .4rem;
-    
-  }
-
-  .AdminPanelWraper .topRightBar .RightSideBody td{
-    background-color: #fff;
-    border-bottom: .12rem solid #252525;   
-    padding: 1rem 1.2rem;
-  }
-
-  .AdminPanelWraper .topRightBar .RightSideBody th{
+table th{
+    position: sticky;
+    top: 0;
     background-color: #020617;
-    padding: 1rem 1.2rem;
-    font-size: 1.2rem;
     color: #fff;
-  }
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-align: left;
+}
 
-  .AdminPanelWraper .topRightBar .RightSideBody td span img{
-    width: 25%;
+tr td{
+    background-color: #fff;
+    padding: .4rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+tr:hover td{
+    background-color: #2871ba;
+    color: #fff;
     cursor: pointer;
-  }
+    scale: 1.1;
+    transition: .5s ease-out;
+}
 
-  tr:hover{
-    background-color: #dddddd;
-    z-index: 9;
-    opacity: .5;
-  }
+tr td button{
+    background-color: transparent;
+    border: none;
+    width: 1.6rem;
+}
+
+tr td button img{
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+tr td button img:hover{
+    scale: 1.5;
+    transition: .4s;
+}
+
+th, td{
+    border-bottom: #020617 solid .12rem;
+    text-align: start;
+}

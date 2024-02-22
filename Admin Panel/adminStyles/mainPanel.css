@@ -54,7 +54,9 @@ section {
     object-fit: contain;
 }
 
-.AdminPanelWraper .sideBar .navigations .dashboard,
+.AdminPanelWraper .sideBar .navigations 
+.dashboard,
+.AdminMessage,
 .blogs,
 .Users {
     display: flex;
@@ -72,7 +74,9 @@ section {
     cursor: pointer;
 }
 
-.AdminPanelWraper .sideBar .navigations .blogs h1,
+.AdminPanelWraper .sideBar .navigations 
+.blogs h1,
+.AdminMessage h1,
 .Users h1 {
     font-size: 1.3rem;
     color: #fff;
@@ -81,6 +85,7 @@ section {
 
 .AdminPanelWraper .sideBar .navigations .dashboard .icon,
 .blogs .icon,
+.AdminMessage .icon,
 .Users .icon {
     width: 15%;
 }
