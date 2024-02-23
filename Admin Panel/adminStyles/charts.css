@@ -70,19 +70,19 @@
 
 @media (max-width: 1200px){
     .statistics .message .messageBody .img{
-        width: 35%;
+        width: 15%;
     }
 }
 
 @media (max-width: 1024px) {
     .statistics .message .messageBody .img{
-        width: 50%;
+        width: 15%;
     }
 }
 
 @media (max-width: 960px) {
     .statistics .message .messageBody .img{
-        width: 70%;
+        width: 15%;
     }
 }
 
