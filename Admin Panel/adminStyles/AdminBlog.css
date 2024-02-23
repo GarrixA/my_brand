@@ -240,3 +240,15 @@ th, td{
     border-bottom: #020617 solid .12rem;
     text-align: start;
 }
+
+.formWrapper form  .description .submit button{
+    width: 40%;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: #EAB308;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
