@@ -37,6 +37,11 @@
         font-style: italic;
     }
 
+    .error {
+        color: red;
+        font-size: 14px;
+    }
+
     #login .loginWrapper form button{
         padding: .2rem;
         border: none;

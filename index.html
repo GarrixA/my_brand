@@ -352,9 +352,10 @@
         <section id="login">
             <div class="loginWrapper">
                 <h1>Sign in</h1>
-                <form>
-                    <input type="email" placeholder="Type your email...">
-                    <input type="password" placeholder="Type your password...">
+                <form onsubmit="return validateForm()">
+                    <input type="email" placeholder="Type your email..." required><br>
+                    <input type="password" id="password" placeholder="Type your password..." required>
+                    <span id="passwordError" class="error"></span><br> <!-- Error message container -->
                     <button type="submit">Login</button>
                     <p>forgot your password</p>
                 </form>
@@ -409,7 +410,7 @@
                     <a href="#portfolio">Portfolio</a>
                     <a href="#blogs">Blogs</a>
                     <a href="#contact">Contact</a>
-                    <a href="#login" class="login">Login</a>
+                    <a href="/Admin Panel/mainPanel.html" class="login">Login</a>
                 </nav>
             </div>
         </footer>
@@ -417,6 +418,7 @@
     <script src="/styles/index.js"></script>
     <script src="/styles/Slider.js"></script>
     <script src="/styles/swiper.js"></script>
+    <script src="/styles/login.js"></script>
 </body>
 
 </html>
