@@ -252,3 +252,68 @@ th, td{
     border-radius: .4rem;
     cursor: pointer;
 }
+
+/* Modal of settings */
+.settings{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    top: 102%;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #111827;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
+    padding-bottom: 1rem;
+}
+
+.settings a{
+    color: #fff;
+}
+
+.settings h1{
+    background-color: #020617;
+    color: #fff;
+    padding: .4rem 3rem;
+}
+
+.settings .updatep{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .4rem;
+}
+
+.settings 
+    .updateProfile, 
+    .logOut{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        transition: .4s;
+        padding: .4rem .4rem;
+        gap: .4rem;
+        cursor: pointer;
+    }
+
+.settings 
+    .updateProfile:hover, 
+    .logOut:hover{
+        background-color: #EAB308;
+        scale: 1.1;
+    }
+
+.settings 
+    .updateProfile .img, 
+    .logOut .img{
+        width: 15%;
+        display: flex;
+        align-items: center;
+    }
+
+.settings 
+    .updateProfile .img img, 
+    .logOut .img img{
+        width: 100%;
+        object-fit: contain;
+    }

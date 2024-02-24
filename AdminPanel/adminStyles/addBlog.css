@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111827;
+}
+
+section{
+    height: 100vh;
+}
+
+.AdminPanelWraper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.AdminPanelWraper .sideBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #020617;
+    z-index: 10;
+}
+
+.AdminPanelWraper .sideBar .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+.AdminPanelWraper .sideBar .profile .img{
+    width: 30%;
+}
+.AdminPanelWraper .sideBar .profile .img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.dashboard, 
+.AdminMessage,
+.blogs, 
+.Users{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.AdminPanelWraper .sideBar .navigations .blogs h1{
+    font-size: 1.3rem;
+    color: #EAB308;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations
+.dashboard h1, 
+.AdminMessage h1,
+.Users h1{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations
+.dashboard a,
+.AdminMessage a,
+.blogs a, 
+.Users a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.dashboard .icon,
+.AdminMessage .icon, 
+.blogs .icon, 
+.Users .icon{
+    width: 15%;
+}
+.AdminPanelWraper .sideBar .navigations 
+.dashboard .icon img, 
+.blogs .icon img, 
+.Users .icon img{
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Rwight side on the top */
+.AdminPanelWraper .topRightBar{
+    width: 85%;
+    height: 100%;
+    background-color: #111827;
+    position: relative;
+    left: 15%;
+    height: fit-content;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #111827;
+    box-shadow: 0rem .2rem .5rem .4rem #020617;
+    color: #fff;
+    position: fixed;
+    width: 85%;
+}
+
+/* the sun icon and person icon */
+.AdminPanelWraper .topRightBar .adminNavbar .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar .icons 
+.sun, 
+.user{
+    width: 30%;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar .icons 
+.sun img, 
+.user img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* The body contents */
+
+.AdminPanelWraper .topRightBar .RightSideBody{
+    margin: 7rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* form */
+.formWrapper{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formWrapper h1{
+    background-color: #0358ad;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.formWrapper form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem 0rem;
+    gap: 3rem;
+    width: 100%;
+    background-color: #020617;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: #fff;
+    align-items: center;
+}
+
+.formWrapper form .image{
+    border-radius: 2rem;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827;
+    border: #EAB308 .3rem dashed;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.formWrapper form .image:hover {
+    transform: rotate(360deg);
+}
+
+.formWrapper form .image:active {
+    scale: 1.2;
+}
+
+.formWrapper form .image input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formWrapper form 
+.image, 
+.Title, 
+.description, 
+.date{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .2rem 0rem;
+}
+
+.formWrapper form 
+.image input, 
+.Title input,  
+.date input{
+    padding: .6rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.formWrapper form  .description .submit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.formWrapper form  .description .submit button{
+    width: 40%;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: #EAB308;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+}
+
+/* Modal of settings */
+.settings{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    top: 102%;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #111827;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
+    padding-bottom: 1rem;
+}
+
+.settings a{
+    color: #fff;
+}
+
+.settings h1{
+    background-color: #020617;
+    color: #fff;
+    padding: .4rem 3rem;
+}
+
+.settings .updatep{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .4rem;
+}
+
+.settings 
+    .updateProfile, 
+    .logOut{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        transition: .4s;
+        padding: .4rem .4rem;
+        gap: .4rem;
+        cursor: pointer;
+    }
+
+.settings 
+    .updateProfile:hover, 
+    .logOut:hover{
+        background-color: #EAB308;
+        scale: 1.1;
+    }
+
+.settings 
+    .updateProfile .img, 
+    .logOut .img{
+        width: 15%;
+        display: flex;
+        align-items: center;
+    }
+
+.settings 
+    .updateProfile .img img, 
+    .logOut .img img{
+        width: 100%;
+        object-fit: contain;
+    }

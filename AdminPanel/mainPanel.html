@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Admin Panel/adminStyles/mainPanel.css">
-    <link rel="stylesheet" href="/Admin Panel/adminStyles/charts.css">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/mainPanel.css">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/charts.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Admin</title>
 </head>
@@ -27,27 +27,41 @@
                         <div class="icon">
                             <img src="/images/ic_outline-dashboard.svg" alt="dashboard">
                         </div>
-                        <a href="#"><h1 class="active">Dashboard</h1></a>
+                        <a href="#">
+                            <h1 class="active">Dashboard</h1>
+                        </a>
                     </div>
                     <div class="blogs">
                         <div class="icon">
                             <img src="/images/cib_micro-blog.svg" alt="blog">
                         </div>
-                        <a href="/Admin Panel/AdminBlog.html"><h1>Blogs</h1></a>
+                        <a href="/AdminPanel/AdminBlog.html">
+                            <h1>Blogs</h1>
+                        </a>
                     </div>
                     <div class="AdminMessage">
                         <div class="icon">
                             <img src="/Images/jam_messages-f.png" alt="messages">
                         </div>
-                        <a href="/Admin Panel/AdminMessages.html">
+                        <a href="/AdminPanel/AdminMessages.html">
                             <h1>Messages</h1>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <div class="icon">
+                            <img src="/images/fa-solid_project-diagram.svg" alt="projects">
+                        </div>
+                        <a href="/AdminPanel/Projects.html">
+                            <h1>Projects</h1>
                         </a>
                     </div>
                     <div class="Users">
                         <div class="icon">
                             <img src="/images/mdi_users.svg" alt="user">
                         </div>
-                        <a href="/Admin Panel/AdminUsers.html"><h1>Users</h1></a>
+                        <a href="/AdminPanel/AdminUsers.html">
+                            <h1>Users</h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,10 +72,29 @@
                     </div>
                     <div class="icons">
                         <div class="sun">
-                            <img src="/images/bi_sun.svg" alt="bi_sun">
+                            <img src="/images/ion_notifications.svg" alt="bi_sun">
                         </div>
-                        <div class="user">
-                            <img src="/images/codicon_account.svg" alt="account">
+                        <div class="user" onclick="showSettings()">
+                            <img src="/images/ic_round-settings.svg" alt="account">
+                        </div>
+                    </div>
+
+                    <!-- the settings modal -->
+                    <div class="settings" id="settings">
+                        <h1>Settings</h1>
+                        <div class="updatep">
+                            <a href="/AdminPanel/myAccount.html">
+                                <div class="updateProfile">
+                                    <div class="img"><img src="/images/codicon_account.svg" alt=""></div>
+                                    <p>Account</p>
+                                </div>
+                            </a>
+                            <a href="/index.html">
+                                <div class="logOut">
+                                    <div class="img"><img src="/images/tabler_logout.svg" alt=""></div>
+                                    <p>Log out</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -156,14 +189,15 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="/Admin Panel/Chart.js"></script>
+    <script src="/AdminPanel/Chart.js"></script>
+    <script src="/styles/index.js"></script>
 </body>
 
 </html>

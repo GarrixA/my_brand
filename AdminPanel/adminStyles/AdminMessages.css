@@ -145,87 +145,6 @@ section {
   margin: 8rem 3.5rem;
 }
 
-/* Table */
-/* .tableWrapper{
-    overflow: auto;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-table th{
-    position: sticky;
-    top: 0;
-    background-color: #020617;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 700;
-    padding: 1rem 2rem;
-}
-
-tr td{
-    background-color: #fff;
-    padding: .4rem 2rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-tr td .read{
-    background-color: rgba(32, 111, 32, 0.711);
-    color: #fff;
-    padding: .4rem 1rem;
-    border-radius: .4rem;
-}
-
-tr td .unread{
-    background-color: rgba(255, 0, 0, 0.673);
-    color: #fff;
-    padding: .4rem .7rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    border-radius: .4rem;
-}
-
-tr:hover td{
-    background-color: #0358ad;
-    color: #fff;
-    cursor: pointer;
-    scale: 1.1;
-    transition: .5s ease-out;
-}
-
-tr td button{
-    background-color: transparent;
-    border: none;
-    width: 1.6rem;
-    margin-left: 1rem;
-}
-
-tr td button img{
-    width: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-tr td button img:hover{
-    scale: 1.3;
-    transition: .4s;
-}
-
-tr td button img:active{
-    scale: 1.8;
-}
-
-th, td{
-    border-bottom: #020617 solid .12rem;
-    text-align: start;
-} */
-
 
 .messageWrapper {
   display: flex;
@@ -385,10 +304,6 @@ th, td{
     justify-content: start;
 }
 
-.rightBody{
-    /* background-color: red; */
-}
-
 .rightBody form{
     position: sticky;
     background-color: #eab308;
@@ -434,3 +349,68 @@ th, td{
 .rightBody .xx{
     margin-top: 8rem;
 }
+
+/* Modal of settings */
+/* .settings{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 1%;
+  top: 102%;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  background-color: #111827;
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
+  padding-bottom: 1rem;
+}
+
+.settings a{
+  color: #fff;
+}
+
+.settings h1{
+  background-color: #020617;
+  color: #fff;
+  padding: .4rem 3rem;
+}
+
+.settings .updatep{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem .4rem;
+}
+
+.settings 
+  .updateProfile, 
+  .logOut{
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      transition: .4s;
+      padding: .4rem .4rem;
+      gap: .4rem;
+      cursor: pointer;
+  }
+
+.settings 
+  .updateProfile:hover, 
+  .logOut:hover{
+      background-color: #EAB308;
+      scale: 1.1;
+  }
+
+.settings 
+  .updateProfile .img, 
+  .logOut .img{
+      width: 15%;
+      display: flex;
+      align-items: center;
+  }
+
+.settings 
+  .updateProfile .img img, 
+  .logOut .img img{
+      width: 100%;
+      object-fit: contain;
+  } */

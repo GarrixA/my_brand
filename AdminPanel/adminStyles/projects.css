@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #111827;
+}
+
+section {
+    height: 100vh;
+}
+
+.AdminPanelWraper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.AdminPanelWraper .sideBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #020617;
+    z-index: 10;
+}
+
+.AdminPanelWraper .sideBar .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.AdminPanelWraper .sideBar .profile .img {
+    width: 30%;
+}
+
+.AdminPanelWraper .sideBar .profile .img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.dashboard,
+.projects,
+.AdminMessage,
+.blogs,
+.Users {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+}
+
+.AdminPanelWraper .sideBar .navigations .projects h1 {
+    font-size: 1.3rem;
+    color: #EAB308;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.blogs h1,
+.dashboard h1,
+.AdminMessage h1,
+.Users h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.dashboard .icon,
+.projects .icon,
+.blogs .icon,
+.AdminMessage .icon,
+.Users .icon {
+    width: 15%;
+}
+
+.AdminPanelWraper .sideBar .navigations 
+.dashboard .icon img,
+.AdminMessage .icon img,
+.projects .icon img,
+.blogs .icon img,
+.Users .icon img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Rwight side on the top */
+.AdminPanelWraper .topRightBar {
+    width: 85%;
+    height: 100%;
+    background-color: #111827;
+    position: relative;
+    left: 15%;
+    height: fit-content;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #111827;
+    box-shadow: 0rem .2rem .5rem .4rem #020617;
+    color: #fff;
+    position: fixed;
+    width: 85%;
+}
+
+/* the sun icon and person icon */
+.AdminPanelWraper .topRightBar .adminNavbar .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar .icons .sun,
+.user {
+    width: 30%;
+}
+
+.AdminPanelWraper .topRightBar .adminNavbar .icons .sun img,
+.user img {
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+/* The body contents */
+.AdminPanelWraper .RightSideBody {
+    margin: 8rem 3.5rem;
+}
+
+/* the cards */
+
+
+/* Responsiveness*/
+@media (max-width: 1200px) {
+
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
+    .likesCard .bottom span,
+    .commentsCard .bottom span {
+        padding: 0rem 4rem;
+    }
+
+    /* styles for heding 1 */
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .top h1,
+    .likesCard .top h1,
+    .commentsCard .top h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
+    .likesCard .bottom span,
+    .commentsCard .bottom span {
+        padding: 0rem 4rem;
+        font-size: 2.5rem;
+    }
+
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .top h1,
+    .likesCard .top h1,
+    .commentsCard .top h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
+    .likesCard .bottom span,
+    .commentsCard .bottom span {
+        padding: .4rem 3rem;
+        font-size: 2rem;
+    }
+
+    @media (max-width: 800px) {
+        .AdminPanelWraper .RightSideBody .cards {
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    .AdminPanelWraper .RightSideBody .cards 
+    .blogsCard,
+    .commentsCard,
+    .likesCard {
+        flex: 1;
+        margin-left: 1rem;
+    }
+
+    @media (max-width: 640px) {
+        .AdminPanelWraper .RightSideBody .cards {
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+
+    .AdminPanelWraper .sideBar {
+        display: none;
+    }
+
+    .AdminPanelWraper .topRightBar {
+        width: 100%;
+        left: 0;
+    }
+
+    .AdminPanelWraper .topRightBar .adminNavbar {
+        width: 100%;
+        left: 0;
+    }
+
+    .AdminPanelWraper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Modal of settings */
+.settings{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    top: 102%;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #111827;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
+    padding-bottom: 1rem;
+}
+
+.settings a{
+    color: #fff;
+}
+
+.settings h1{
+    background-color: #020617;
+    color: #fff;
+    padding: .4rem 3rem;
+}
+
+.settings .updatep{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .4rem;
+}
+
+.settings 
+    .updateProfile, 
+    .logOut{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        transition: .4s;
+        padding: .4rem .4rem;
+        gap: .4rem;
+        cursor: pointer;
+    }
+
+.settings 
+    .updateProfile:hover, 
+    .logOut:hover{
+        background-color: #EAB308;
+        scale: 1.1;
+    }
+
+.settings 
+    .updateProfile .img, 
+    .logOut .img{
+        width: 15%;
+        display: flex;
+        align-items: center;
+    }
+
+.settings 
+    .updateProfile .img img, 
+    .logOut .img img{
+        width: 100%;
+        object-fit: contain;
+    }
+
+    
+/* these things above the table  */
+.AdminPanelWraper .topRightBar .RightSideBody .aboveTable{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .4rem;
+}
+
+.AdminPanelWraper .topRightBar .RightSideBody .aboveTable h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.AdminPanelWraper .topRightBar .RightSideBody .aboveTable .addBlog button{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #EAB308;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+/* Table */
+.tableWrapper{
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+table th{
+    position: sticky;
+    top: 0;
+    background-color: #020617;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+tr td{
+    background-color: #fff;
+    padding: .4rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+tr:hover td{
+    background-color: #2871ba;
+    color: #fff;
+    cursor: pointer;
+    scale: 1.1;
+    transition: .5s ease-out;
+}
+
+tr td button{
+    background-color: transparent;
+    border: none;
+    width: 1.6rem;
+}
+
+tr td button img{
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+tr td button img:hover{
+    scale: 1.5;
+    transition: .4s;
+}
+
+th, td{
+    border-bottom: #020617 solid .12rem;
+    text-align: start;
+}
+
+.formWrapper form  .description .submit button{
+    width: 40%;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: #EAB308;
+    padding: .4rem .6rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}

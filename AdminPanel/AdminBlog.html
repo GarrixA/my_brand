@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/AdminBlog.css">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/charts.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <section>
+        <div class="AdminPanelWraper">
+            <div class="sideBar">
+                <div class="profile">
+                    <div class="img">
+                        <img src="/images/adminProfile.svg" alt="adminProfile">
+                    </div>
+                    <div class="text">
+                        <h1>Admin</h1>
+                    </div>
+                </div>
+                <div class="navigations">
+                    <div class="dashboard">
+                        <div class="icon">
+                            <img src="/images/ic_outline-dashboard-white.svg" alt="dashboard">
+                        </div>
+                        <a href="/AdminPanel/mainPanel.html">
+                            <h1 class="active">Dashboard</h1>
+                        </a>
+                    </div>
+                    <div class="blogs">
+                        <div class="icon">
+                            <img src="/images/cib_micro-blog-colored.svg" alt="blog">
+                        </div>
+                        <a href="#">
+                            <h1>Blogs</h1>
+                        </a>
+                    </div>
+                    <div class="AdminMessage">
+                        <div class="icon">
+                            <img src="/Images/jam_messages-f.png" alt="messages">
+                        </div>
+                        <a href="/AdminPanel/AdminMessages.html">
+                            <h1>Messages</h1>
+                        </a>
+                    </div>
+                    <div class="Users">
+                        <div class="icon">
+                            <img src="/images/fa-solid_project-diagram.svg" alt="project">
+                        </div>
+                        <a href="/AdminPanel/Projects.html">
+                            <h1>Projects</h1>
+                        </a>
+                    </div>
+                    <div class="Users">
+                        <div class="icon">
+                            <img src="/images/mdi_users.svg" alt="user">
+                        </div>
+                        <a href="/AdminPanel/AdminUsers.html">
+                            <h1>Users</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="topRightBar">
+                <div class="adminNavbar">
+                    <div class="greetings">
+                        <h1>Hi Admin !</h1>
+                    </div>
+                    <div class="icons">
+                        <div class="sun">
+                            <img src="/images/ion_notifications.svg" alt="bi_sun">
+                        </div>
+                        <div class="user" onclick="showSettings()">
+                            <img src="/images/ic_round-settings.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="RightSideBody">
+                    <div class="contentWraper">
+                        <div class="aboveTable">
+                            <h1>Blogs</h1>
+                            <div class="addBlog">
+                                <a href="/AdminPanel/addBlog.html"><button>Add blog</button></a>
+                            </div>
+                        </div>
+                        <div class="tableWrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>Comments</th>
+                                        <th>Likes</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Manaki Jelsalem</td>
+                                        <td>11.02.2024</td>
+                                        <td>42</td>
+                                        <td>58</td>
+                                        <td>
+                                            <a href="/AdminPanel/editBlog.html"><button>
+                                                <img src="/Images/ic_baseline-edit.png" alt="">
+                                            </button></a>
+                                            <button>
+                                                <img src="/Images/mingcute_delete-fill.png" alt="">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/AdminPanel/Editor.js"></script>
+</body>
+
+</html>

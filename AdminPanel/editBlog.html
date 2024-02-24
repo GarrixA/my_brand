@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/addBlog.css">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/charts.css">
+    <script src="https://cdn.tiny.cloud/1/kg3033m6umoiuxxlhw6hqz4ewuw7kmed59rvsjo9cs8meel1/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <title>Admin</title>
+</head>
+
+<body>
+    <section>
+        <div class="AdminPanelWraper">
+            <div class="sideBar">
+                <div class="profile">
+                    <div class="img">
+                        <img src="/images/adminProfile.svg" alt="adminProfile">
+                    </div>
+                    <div class="text">
+                        <h1>Admin</h1>
+                    </div>
+                </div>
+                <div class="navigations">
+                    <div class="dashboard">
+                        <div class="icon">
+                            <img src="/images/ic_outline-dashboard-white.svg" alt="dashboard">
+                        </div>
+                        <a href="/AdminPanel/mainPanel.html">
+                            <h1 class="active">Dashboard</h1>
+                        </a>
+                    </div>
+                    <div class="blogs">
+                        <div class="icon">
+                            <img src="/images/cib_micro-blog-colored.svg" alt="blog">
+                        </div>
+                        <a href="/AdminPanel/AdminBlog.html">
+                            <h1>Blogs</h1>
+                        </a>
+                    </div>
+                    <div class="AdminMessage">
+                        <div class="icon">
+                            <img src="/Images/jam_messages-f.png" alt="messages">
+                        </div>
+                        <a href="/AdminPanel/AdminMessages.html">
+                            <h1>Messages</h1>
+                        </a>
+                    </div>
+                    <div class="Users">
+                        <div class="icon">
+                            <img src="/images/fa-solid_project-diagram.svg" alt="user">
+                        </div>
+                        <a href="/AdminPanel/Projects.html">
+                            <h1>Projects</h1>
+                        </a>
+                    </div>
+                    <div class="Users">
+                        <div class="icon">
+                            <img src="/images/mdi_users.svg" alt="user">
+                        </div>
+                        <a href="/AdminPanel/AdminUsers.html">
+                            <h1>Users</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="topRightBar">
+                <div class="adminNavbar">
+                    <div class="greetings">
+                        <h1>Hi Admin !</h1>
+                    </div>
+                    <div class="icons">
+                        <div class="sun">
+                            <img src="/images/ion_notifications.svg" alt="bi_sun">
+                        </div>
+                        <div class="user" onclick="showSettings()">
+                            <img src="/images/ic_round-settings.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="RightSideBody">
+                    <div class="formWrapper">
+                        <h1>Edit Blog</h1>
+                        <form>
+                            <div class="image">
+                                <label>Edit Image</label>
+                                <input type="file" placeholder="place image">
+                            </div>
+                            <div class="Title">
+                                <label>Title</label>
+                                <input type="text" placeholder="add title">
+                            <div class="date">
+                                <label>Date</label>
+                                <input type="datetime-local" placeholder="chose date">
+                            </div>
+                            <div class="description">
+                                <label>Description</label>
+                                <textarea>Hello World!</textarea>
+                                <div class="submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/AdminPanel/adminStyles/addblog.js"></script>
+</body>
+
+</html>
