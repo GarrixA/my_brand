@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Admin Panel/adminStyles/AdminUsers.css">
-    <link rel="stylesheet" href="/Admin Panel/adminStyles/charts.css">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/AdminUsers.css">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/charts.css">
     <title>Admin</title>
 </head>
 
@@ -26,7 +26,7 @@
                         <div class="icon">
                             <img src="/images/ic_outline-dashboard-white.svg" alt="dashboard">
                         </div>
-                        <a href="/Admin Panel/mainPanel.html">
+                        <a href="/AdminPanel/mainPanel.html">
                             <h1 class="active">Dashboard</h1>
                         </a>
                     </div>
@@ -34,7 +34,7 @@
                         <div class="icon">
                             <img src="/images/cib_micro-blog.svg" alt="blog">
                         </div>
-                        <a href="/Admin Panel/AdminBlog.html">
+                        <a href="/AdminPanel/AdminBlog.html">
                             <h1>Blogs</h1>
                         </a>
                     </div>
@@ -42,8 +42,16 @@
                         <div class="icon">
                             <img src="/Images/jam_messages-f.png" alt="messages">
                         </div>
-                        <a href="/Admin Panel/AdminMessages.html">
+                        <a href="/AdminPanel/AdminMessages.html">
                             <h1>Messages</h1>
+                        </a>
+                    </div>
+                    <div class="blogs">
+                        <div class="icon">
+                            <img src="/images/fa-solid_project-diagram.svg" alt="blog">
+                        </div>
+                        <a href="/AdminPanel/Projects.html">
+                            <h1>Projects</h1>
                         </a>
                     </div>
                     <div class="Users">
@@ -63,11 +71,26 @@
                     </div>
                     <div class="icons">
                         <div class="sun">
-                            <img src="/images/bi_sun.svg" alt="bi_sun">
+                            <img src="/images/ion_notifications.svg" alt="bi_sun">
                         </div>
-                        <div class="user">
-                            <img src="/images/codicon_account.svg" alt="account">
+                        <div class="user" onclick="showSettings()">
+                            <img src="/images/ic_round-settings.svg" alt="account">
                         </div>
+                    </div>
+                </div>
+                
+                <!-- the settings modal -->
+                <div class="settings" id="settings">
+                    <h1>Settings</h1>
+                    <div class="updatep">
+                        <div class="updateProfile">
+                            <div class="img"><img src="/images/codicon_account.svg" alt=""></div>
+                            <p>Account</p>
+                        </div>
+                        <a href="/index.html"><div class="logOut">
+                            <div class="img"><img src="/images/tabler_logout.svg" alt=""></div>
+                            <p>Log out</p>
+                        </div></a>
                     </div>
                 </div>
 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AdminPanel/adminStyles/projects.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <section>
+        <div class="AdminPanelWraper">
+            <div class="sideBar">
+                <div class="profile">
+                    <div class="img">
+                        <img src="/images/adminProfile.svg" alt="adminProfile">
+                    </div>
+                    <div class="text">
+                        <h1>Admin</h1>
+                    </div>
+                </div>
+                <div class="navigations">
+                    <div class="dashboard">
+                        <div class="icon">
+                            <img src="/images/ic_outline-dashboard-white.svg" alt="dashboard">
+                        </div>
+                        <a href="/AdminPanel/mainPanel.html">
+                            <h1 class="active">Dashboard</h1>
+                        </a>
+                    </div>
+                    <div class="blogs">
+                        <div class="icon">
+                            <img src="/images/cib_micro-blog.svg" alt="blog">
+                        </div>
+                        <a href="/AdminPanel/AdminBlog.html">
+                            <h1>Blogs</h1>
+                        </a>
+                    </div>
+                    <div class="AdminMessage">
+                        <div class="icon">
+                            <img src="/Images/jam_messages-f.png" alt="messages">
+                        </div>
+                        <a href="/AdminPanel/AdminMessages.html">
+                            <h1>Messages</h1>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <div class="icon">
+                            <img src="/images/fa-solid_project-diagramColored.svg" alt="projects">
+                        </div>
+                        <a href="#">
+                            <h1>Projects</h1>
+                        </a>
+                    </div>
+                    <div class="Users">
+                        <div class="icon">
+                            <img src="/images/mdi_users.svg" alt="user">
+                        </div>
+                        <a href="/AdminPanel/AdminUsers.html">
+                            <h1>Users</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="topRightBar">
+                <div class="adminNavbar">
+                    <div class="greetings">
+                        <h1>Hi Admin !</h1>
+                    </div>
+                    <div class="icons">
+                        <div class="sun">
+                            <img src="/images/ion_notifications.svg" alt="bi_sun">
+                        </div>
+                        <div class="user" onclick="showSettings()">
+                            <img src="/images/ic_round-settings.svg" alt="account">
+                        </div>
+                    </div>
+
+                    <!-- the settings modal -->
+                    <div class="settings" id="settings">
+                        <h1>Settings</h1>
+                        <div class="updatep">
+                            <div class="updateProfile">
+                                <div class="img"><img src="/images/codicon_account.svg" alt=""></div>
+                                <p>Account</p>
+                            </div>
+                            <a href="/index.html"><div class="logOut">
+                                <div class="img"><img src="/images/tabler_logout.svg" alt=""></div>
+                                <p>Log out</p>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="RightSideBody">
+                    <div class="contentWraper">
+                        <div class="aboveTable">
+                            <h1>Projects</h1>
+                            <div class="addBlog">
+                                <a href="/AdminPanel/addProjects.html"><button>Add project</button></a>
+                            </div>
+                        </div>
+                        <div class="tableWrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Smart parking</td>
+                                        <td>11.02.2024</td>
+                                        <td>One of the most po...</td>
+                                        <td>
+                                            <a href="/AdminPanel/editProject.html"><button>
+                                                <img src="/Images/ic_baseline-edit.png" alt="">
+                                            </button></a>
+                                            <button>
+                                                <img src="/Images/mingcute_delete-fill.png" alt="">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/styles/index.js"></script>
+    <script src="/AdminPanel/adminStyles/addblog.js"></script>
+</body>
+
+</html>

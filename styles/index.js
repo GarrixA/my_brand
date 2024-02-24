@@ -66,3 +66,23 @@ function showMenu(){
     nav.style.display = 'flex';
   }
 }
+
+function showSettings(){
+  let sett = document.getElementById('settings')
+
+  if(sett.style.display === 'flex'){
+    sett.style.display = 'none'
+  }else{
+    sett.style.display = 'flex'
+  }
+}
+
+function showEditProfile(){
+  let profile = document.getElementById('myAccountModal')
+
+  if(profile.style.display === 'flex'){
+    profile.style.display = 'none'
+  }else{
+    profile.style.display = 'flex'
+  }
+}

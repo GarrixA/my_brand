@@ -1,10 +1,11 @@
 
 let myChart = document.getElementById('myChart').getContext('2d')
-
+let col = 'white'
 let popChart = new Chart(myChart, {
     type: 'line',
     data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        
         datasets: [{
             label: 'Comment',
             data: [
