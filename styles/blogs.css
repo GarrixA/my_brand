@@ -163,9 +163,11 @@
     #blogs .blogsContainer {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 1rem 6rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         gap: 1rem;
         position: relative;
+        align-items: center;
+        justify-content: center;
     }
 
     #blogs .blogsContainer .blog {
