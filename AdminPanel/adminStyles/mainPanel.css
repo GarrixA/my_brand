@@ -54,8 +54,7 @@ section {
     object-fit: contain;
 }
 
-.AdminPanelWraper .sideBar .navigations 
-.dashboard,
+.AdminPanelWraper .sideBar .navigations .dashboard,
 .projects,
 .AdminMessage,
 .blogs,
@@ -75,8 +74,7 @@ section {
     cursor: pointer;
 }
 
-.AdminPanelWraper .sideBar .navigations 
-.blogs h1,
+.AdminPanelWraper .sideBar .navigations .blogs h1,
 .projects h1,
 .AdminMessage h1,
 .Users h1 {
@@ -85,8 +83,7 @@ section {
     cursor: pointer;
 }
 
-.AdminPanelWraper .sideBar .navigations 
-.dashboard .icon,
+.AdminPanelWraper .sideBar .navigations .dashboard .icon,
 .projects .icon,
 .blogs .icon,
 .AdminMessage .icon,
@@ -94,8 +91,7 @@ section {
     width: 15%;
 }
 
-.AdminPanelWraper .sideBar .navigations 
-.dashboard .icon img,
+.AdminPanelWraper .sideBar .navigations .dashboard .icon img,
 .AdminMessage .icon img,
 .projects .icon img,
 .blogs .icon img,
@@ -232,6 +228,15 @@ section {
     object-fit: contain;
 }
 
+/* menu */
+.menu {
+    display: none;
+}
+
+#sideBar{
+    display: none;
+}
+
 /* Responsiveness*/
 @media (max-width: 1200px) {
 
@@ -274,54 +279,180 @@ section {
         font-size: 2rem;
     }
 
-    @media (max-width: 800px) {
-        .AdminPanelWraper .RightSideBody .cards {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-    }
-
-    .AdminPanelWraper .RightSideBody .cards 
-    .blogsCard,
-    .commentsCard,
-    .likesCard {
-        flex: 1;
-        margin-left: 1rem;
-    }
-
-    @media (max-width: 640px) {
-        .AdminPanelWraper .RightSideBody .cards {
-            justify-content: center;
-            flex-wrap: nowrap;
-            flex-direction: column;
-        }
-    }
-
-    .AdminPanelWraper .sideBar {
-        display: none;
-    }
-
     .AdminPanelWraper .topRightBar {
-        width: 100%;
-        left: 0;
+        width: 85%;
+        height: 100%;
+        background-color: #111827;
+        position: relative;
+        left: 15%;
+        height: fit-content;
     }
 
     .AdminPanelWraper .topRightBar .adminNavbar {
-        width: 100%;
-        left: 0;
+        width: 82%;
+        right: 0;
     }
+
+    .AdminPanelWraper .sideBar {
+        width: 18%;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+        font-size: 1rem;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+        font-size: 1rem;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+        width: 20%;
+    }
+
+    .AdminPanelWraper .sideBar .profile {
+        font-size: .9rem;
+    }
+}
+
+
+@media (max-width: 768px) {
 
     .AdminPanelWraper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .AdminPanelWraper .topRightBar {
+        width: 100%;
+        height: 100%;
+        background-color: #111827;
+        position: relative;
+        left: 0;
+        height: fit-content;
+    }
+
+    .AdminPanelWraper .topRightBar .adminNavbar {
+        width: 100%;
+    }
+
+    /* the cards */
+    .AdminPanelWraper .RightSideBody .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .AdminPanelWraper .RightSideBody .cards .blogsCard,
+    .commentsCard,
+    .likesCard {
+        background-color: #020617;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: .2rem;
+        flex: 1;
+        margin: 1rem;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        background-color: #fff;
+    }
+
+    .menu.active .bars:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu.active .bars:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        background-color: #2965f1;
+        width: 30px;
+    }
+
+    .menu.active .bars:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #2965f1;
+        width: 30px;
+    }
+    
+    /* sidebar of mobile view*/
+    .AdminPanelWraper .sideBar {
+        width: 100%;
+        position: absolute;
+        top: 9%;
+        left: -100%;
+        transition: 1s;
+    }
+    .AdminPanelWraper.active .sideBar{
+        width: 100%;
+        position: absolute;
+        top: 9%;
+        left: 0%;
+        transition: 1s;
+    }
+    
+    .greetings{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .AdminPanelWraper .sideBar .profile {
+        display: none;
+    }
+
+    .AdminPanelWraper .sideBar .navigations {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+        width: 7%;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+        font-size: 1.7rem;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+        font-size: 1.7rem;
     }
 }
 
 
+
 /* Modal of settings */
-.settings{
+.settings {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -331,56 +462,52 @@ section {
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
     background-color: #111827;
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
     padding-bottom: 1rem;
 }
 
-.settings a{
+.settings a {
     color: #fff;
 }
 
-.settings h1{
+.settings h1 {
     background-color: #020617;
     color: #fff;
     padding: .4rem 3rem;
 }
 
-.settings .updatep{
+.settings .updatep {
     display: flex;
     flex-direction: column;
     padding: 1rem .4rem;
 }
 
-.settings 
-    .updateProfile, 
-    .logOut{
-        display: flex;
-        align-items: center;
-        font-size: 1.4rem;
-        transition: .4s;
-        padding: .4rem .4rem;
-        gap: .4rem;
-        cursor: pointer;
-    }
+.settings .updateProfile,
+.logOut {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    transition: .4s;
+    padding: .4rem .4rem;
+    gap: .4rem;
+    cursor: pointer;
+}
 
-.settings 
-    .updateProfile:hover, 
-    .logOut:hover{
-        background-color: #EAB308;
-        scale: 1.1;
-    }
+.settings .updateProfile:hover,
+.logOut:hover {
+    background-color: #EAB308;
+    scale: 1.1;
+}
 
-.settings 
-    .updateProfile .img, 
-    .logOut .img{
-        width: 15%;
-        display: flex;
-        align-items: center;
-    }
+.settings .updateProfile .img,
+.logOut .img {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
 
-.settings 
-    .updateProfile .img img, 
-    .logOut .img img{
-        width: 100%;
-        object-fit: contain;
-    }
+.settings .updateProfile .img img,
+.logOut .img img {
+    width: 100%;
+    object-fit: contain;
+}
