@@ -86,3 +86,12 @@ function showEditProfile(){
     profile.style.display = 'flex'
   }
 }
+
+// dashboard menu actions
+const dashMenu = document.querySelector('.menu')
+const dashSidebar = document.querySelector('.AdminPanelWraper')
+
+dashMenu.addEventListener('click', ()=>{
+  dashMenu.classList.toggle('active')
+  dashSidebar.classList.toggle('active')
+})

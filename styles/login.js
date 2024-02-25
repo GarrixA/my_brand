@@ -9,8 +9,10 @@ function validateForm(e) {
         return false;
     } else {
         passwordError.textContent = "";
-        alert("Form validated! Redirecting to the dashboard...");
-        window.location.href = "/AdminPanel/mainPanel.html";
+        setTimeout(()=>{
+            window.location.href = "/AdminPanel/mainPanel.html";
+        }, 1000)
+        
         return true;
     }
 }
