@@ -49,23 +49,13 @@ navLinks.forEach(link => {
 // toggle menu
 
 let menu = document.getElementById('menu')
+let nav = document.getElementById('header')
 
 function toggleMenu() {
   menu.classList.toggle('openMenu');
-  showMenu();
+  nav.classList.toggle('active')
 }
 
-// hide and show menu
-
-function showMenu(){
-  let nav = document.getElementById('nav')
-
-  if(nav.style.display === 'flex'){
-    nav.style.display = 'none';
-  }else{
-    nav.style.display = 'flex';
-  }
-}
 
 function showSettings(){
   let sett = document.getElementById('settings')

@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /* Responsiveness of reusable components like buttons that has the same class and others like nav footer... */
 @media (min-width: 1280px) {

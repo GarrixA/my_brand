@@ -1,92 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    #login{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .loginWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #020617;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+}
+
+#login .loginWrapper h1 {
+    color: #ffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* signin form  */
+#login .loginWrapper form {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    gap: 1rem;
+}
+
+#login .loginWrapper form input {
+    padding: .7rem;
+    border: none;
+    border-radius: .4rem;
+    font-style: italic;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+#login .loginWrapper form button {
+    padding: .2rem;
+    border: none;
+    border-radius: .4rem;
+    background-color: #EAC308;
+    font-size: 1.6rem;
+    color: #ffff;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#login .loginWrapper form p {
+    color: #EAC308;
+    font-size: .8rem;
+    text-align: right;
+    cursor: pointer;
+}
+
+#login .loginWrapper h3 {
+    color: #ffff;
+    text-align: center;
+
+}
+
+#login .loginWrapper h3 b {
+    color: #EAC308;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    #login .loginWrapper {
+        width: 100%;
     }
-    
-    #login .loginWrapper{
+
+    #login .loginWrapper form {
         display: flex;
         flex-direction: column;
+        padding: 0rem 2rem;
         gap: 1rem;
-        background-color: #020617;
-        padding: 2rem;
-        border-radius: 1rem;
-        width: 50%;
     }
+}
 
-    #login .loginWrapper h1{
-        color: #ffff;
-        font-size: 2rem;
-        text-align: center;
+@media (max-width: 414px) {
+    #login {
+        min-height: 70vh;
     }
-
-    /* signin form  */
-    #login .loginWrapper form{
-        display: flex;
-        flex-direction: column;
-        padding: 0rem 5rem;
-        gap: 1rem;
-    }
-
-    #login .loginWrapper form input {
-        padding: .7rem;
-        border: none;
-        border-radius: .4rem;
-        font-style: italic;
-    }
-
-    .error {
-        color: red;
-        font-size: 14px;
-    }
-
-    #login .loginWrapper form button{
-        padding: .2rem;
-        border: none;
-        border-radius: .4rem;
-        background-color: #EAC308;
-        font-size: 1.6rem;
-        color: #ffff;
-        font-weight: 700;
-        margin-top: 1rem;
-        cursor: pointer;
-    }
-
-    #login .loginWrapper form p{
-        color: #EAC308;
-        font-size: .8rem;
-        text-align: right;
-        cursor: pointer;
-    }
-
-    #login .loginWrapper h3{
-        color: #ffff;
-        text-align: center;
-
-    }
-
-    #login .loginWrapper h3 b{
-        color: #EAC308;
-        cursor: pointer;
-    }
-
-    @media (max-width: 640px){
-        #login .loginWrapper{
-            width: 100%;
-        }
-
-        #login .loginWrapper form{
-            display: flex;
-            flex-direction: column;
-            padding: 0rem 2rem;
-            gap: 1rem;
-        }
-    }
-
-    @media (max-width: 414px){
-       #login{
-        min-height: 55vh;
-       }
-      }
+}
