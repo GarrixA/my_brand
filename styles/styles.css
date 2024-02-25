@@ -33,7 +33,7 @@ header .menu {
 }
 
 main {
-  width: 100vw;
+  width: 100%;
 }
 
 /* The logo of my brand  */
@@ -46,12 +46,6 @@ main {
 
 img {
   background: transparent;
-}
-
-/* The nav container and navbar items removed default backgraund */
-nav,
-a {
-  /* background-color: transparent; */
 }
 
 /* Styles of navigation items */
@@ -99,10 +93,6 @@ section:nth-child(even) {
   display: flex;
 }
 
-#nav {
-  display: none;
-}
-
 @media (max-width: 1200px) {
 
   section {
@@ -116,9 +106,11 @@ section:nth-child(even) {
 
 @media (max-width: 640px) {
   section{
+    width: 100%;
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
   nav {
     display: none;
   }
@@ -193,29 +185,24 @@ section:nth-child(even) {
     flex-direction: column;
     position: absolute;
     align-items: start;
-    padding: 4rem 7rem;
+    padding: 4rem 2rem;
     height: 100vh;
     background-color: #2965f1;
     gap: 1rem;
     top: 3.7rem;
-    left: 10%;
+    right: -100%;
+    transition: 1s ease-in-out;
+    width: 60%;
+  }
+
+  #nav a{
+    font-size: 2rem;
+  }
+
+  header.active #nav{
     right: 0;
-    animation-name: left;
-    animation-duration: 2s;
-  }
-
-  @keyframes left {
-    0% {
-      left: 100%;
-    }
-
-    100% {
-      left: 10%;
-    }
-  }
-
-  #nav a {
-    font-size: 1.7rem;
+    transition: 1s ease-in-out;
+    width: 60%;
   }
 
   .login {
@@ -225,6 +212,7 @@ section:nth-child(even) {
 
 @media (max-width: 414px) {
   section {
+    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -293,29 +281,24 @@ section:nth-child(even) {
     flex-direction: column;
     position: absolute;
     align-items: start;
-    padding: 4rem 7rem;
+    padding: 4rem 2rem;
     height: 100vh;
     background-color: #2965f1;
     gap: 1rem;
     top: 3.7rem;
-    left: 10%;
+    right: -100%;
+    transition: 1s ease-in-out;
+    width: 60%;
+  }
+
+  #nav a{
+    font-size: 1.5rem;
+  }
+
+  header.active #nav{
     right: 0;
-    animation-name: left;
-    animation-duration: 2s;
-  }
-
-  @keyframes left {
-    0% {
-      left: 100%;
-    }
-
-    100% {
-      left: 10%;
-    }
-  }
-
-  #nav a {
-    font-size: 1.7rem;
+    transition: 1s ease-in-out;
+    width: 60%;
   }
 
   .login {

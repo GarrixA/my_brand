@@ -21,9 +21,9 @@
 
 <body>
     <!-- The navigation bar -->
-    <header>
+    <header id="header">
         <a class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
-        <div id="nav">
+        <nav class="nav" id="nav">
             <a href="#home" class="active" onclick="toggleMenu()">Home</a>
             <a href="#about" onclick="toggleMenu()">About</a>
             <a href="#skills" onclick="toggleMenu()">Skills</a>
@@ -31,18 +31,6 @@
             <a href="#blogs" onclick="toggleMenu()">Blogs</a>
             <a href="#contact" onclick="toggleMenu()">Contact</a>
             <a href="#login" class="login" onclick="toggleMenu()">Login</a>
-        </div>
-        <nav class="nav">
-            <div class="holder" id="anim">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#blogs">Blogs</a>
-                <a href="#contact">Contact</a>
-                <a href="#login" class="login">Login</a>
-            </div>
-
         </nav>
 
         <div class="menu" id="menu">
@@ -356,7 +344,7 @@
                     <input type="email" placeholder="Type your email..." required><br>
                     <input type="password" id="password" placeholder="Type your password..." required>
                     <span id="passwordError" class="error"></span><br>
-                    <a href="/AdminPanel/mainPanel.html"><button type="submit">Login</button></a>
+                    <button type="submit">Login</button>
                     <p>forgot your password</p>
                 </form>
                 <h3>Don't have an account <b>Sign up</b></h3>

@@ -1,112 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Presantation texts */
+#portfolio h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#portfolio h1 b {
+    color: #EAB308;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+#portfolio p {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+/* Portfolio images */
+#portfolio .big {
+    width: 40%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#portfolio .big img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#portfolio .portfolioWrapper .otherImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+}
+
+/* Those other small images */
+#portfolio .others {
+    width: 80%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1rem .5rem;
+}
+
+#portfolio .others img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* flexing all the images */
+
+#portfolio .portfolioWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#portfolio .portfolioWrapper .slider {
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    width: 6rem;
+}
+
+@media (max-width: 640px) {
     #portfolio {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-     /* Presantation texts */
-     #portfolio h1{
-        font-size: 3rem;
-        color: #fff;
-        text-align: center;
-        margin-top: 3rem;
-     }
-
-     #portfolio h1 b{
-        color: #EAB308;
-        font-size: 3.4rem;
-        font-weight: 700;
-     }
-
-     #portfolio p{
-        color: #fff;
-        font-size: 1.3rem;
-        margin-top: 1rem;
-     }
-
-    /* Portfolio images */
-    #portfolio .big{
-        width: 40%;
-        height: 20rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
     }
 
-    #portfolio .big img{
-        width: 100%;
-        object-fit: cover;
-        height: 100%;
-    }
-
-    #portfolio .portfolioWrapper .otherImages{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 5rem;
-    }
-
-    /* Those other small images */
-    #portfolio .others{
-        width: 80%;
-        height: 10rem; 
-        display: flex; 
-        justify-content: space-between; 
-        align-items: stretch;
-        padding: 1rem .5rem;
-    }
-
-    #portfolio .others img{
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover; 
-    }
-
-    /* flexing all the images */
-
-    #portfolio .portfolioWrapper{
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-    #portfolio .portfolioWrapper .slider{
-        position: absolute;
-        right: 2%;
-        cursor: pointer;
-        width: 6rem;
-    }
-
-    @media (max-width: 640px){
-        #portfolio {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Presantation texts */
-     #portfolio h1{
+    /* Presantation texts */
+    #portfolio h1 {
         font-size: 2.5rem;
         color: #fff;
         text-align: center;
         margin-top: 3rem;
         text-align: center;
-     }
+    }
 
-     #portfolio h1 b{
+    #portfolio h1 b {
         color: #EAB308;
         font-size: 2.8rem;
         font-weight: 700;
         text-align: center;
-     }
+    }
 
-     #portfolio p{
+    #portfolio p {
         color: #fff;
         font-size: 1.1rem;
         margin-top: 1rem;
-     }
+    }
 
-     #portfolio .portfolioWrapper{
+    #portfolio .portfolioWrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -114,7 +120,7 @@
         padding: 1rem 0rem 3rem 0rem;
     }
 
-    #portfolio .big{
+    #portfolio .big {
         width: 100%;
         height: 20rem;
         display: flex;
@@ -122,132 +128,325 @@
         align-items: stretch;
     }
 
-    #portfolio .others{
+    #portfolio .others {
         width: 100%;
-        height: 10rem; 
-        display: flex; 
-        justify-content: space-between; 
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
         align-items: stretch;
         padding: 1rem 2rem 0rem 0rem;
     }
 
-    #portfolio .portfolioWrapper .otherImages{
+    #portfolio .portfolioWrapper .otherImages {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0rem;
     }
 
-    #portfolio .portfolioWrapper .slider{
+    #portfolio .portfolioWrapper .slider {
         position: absolute;
         right: -5%;
         top: 70%;
         cursor: pointer;
         width: 2rem;
     }
+}
+
+
+.imgContainer {
+    width: 80%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    border: 2rem solid #fff;
+    border-radius: 1rem;
+}
+
+.imgContainer .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.imgContainer .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgContainer .list .contents {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 20%;
+    transform: translateX(-50);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 50px 10px #0004;
+    gap: .4rem;
+}
+
+.imgContainer .list .contents .name {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.imgContainer .list .contents .desc {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.imgContainer .list .contents button {
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    background-color: #EAB308;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* The thumbnail */
+.Thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 99;
+    display: flex;
+    gap: 20px;
+}
+
+.Thumbnail .item {
+    width: 200px;
+    height: 350px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.Thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 0;
+}
+
+.Thumbnail .item .contents {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    background-color: #2965F1;
+    border-radius: .2rem;
+    text-shadow: 0 10px 15px 0;
+}
+
+/* the arrows */
+.arrows {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 10;
+}
+
+.arrows button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    font-family: monospace;
+    color: #EAB308;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrows button:hover {
+    background-color: #2965F1;
+    font-family: monospace;
+    color: #ffff;
+    scale: 1.2;
+}
+
+/* functionalitioes */
+.imgContainer .list .item:nth-child(1) {
+    z-index: 1;
+}
+
+.imgContainer .list .item:nth-child(1) .name,
+.imgContainer .list .item:nth-child(1) .desc,
+.imgContainer .list .item:nth-child(1) button {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: displayIt .5s 1s linear 1 forwards;
+}
+
+@keyframes displayIt {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
     }
+}
 
+.imgContainer .list .item:nth-child(1) .name {
+    animation-delay: 1.2s;
+}
 
-    .imgContainer{
-        width: 80%;
-        height: 80vh;
-        overflow: hidden;
-        position: relative;
-        border: 2rem solid #fff;
-        border-radius: 1rem;
-    }
+.imgContainer .list .item:nth-child(1) .desc {
+    animation-delay: 1.4s;
+}
 
-    .imgContainer .list .item{
-        position: absolute;
-        inset: 0 0 0 0;
-    }
+.imgContainer .list .item:nth-child(1) button {
+    animation-delay: 1.6s;
+}
 
-    .imgContainer .list .item img{
+/* clicks */
+.imgContainer.next .list .item:nth-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    /* bottom: 50px; */
+    border-radius: 15px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        left: 0;
+        right: 0;
+        border-radius: 0;
     }
+}
 
-    .imgContainer .list .contents{
+.imgContainer.next .Thumbnail .item:nth-last-child(1) {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    animation: showThumb 0.5s linear 1 forwards;
+}
+
+@keyframes showThumb {
+    to {
+        width: 150px;
+    }
+}
+
+.imgContainer.next .Thumbnail {
+    transform: translateX(150px);
+    animation: transformThumb .5s linear 1 forwards;
+}
+
+@keyframes transformThumb {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* previous button */
+.imgContainer.prev .list .item:nth-child(2) {
+    z-index: 2;
+}
+
+.imgContainer.prev .list .item:nth-child(2) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage .5s linear 1 forwards;
+}
+
+@keyframes outImage {
+    to {
+        width: 150px;
+        height: 220px;
+        border-radius: 15px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+.imgContainer.prev .Thumbnail .item:nth-child(1) {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumb .5s linear 1 forwards;
+}
+
+.imgContainer.prev .list .item:nth-child(2) .name,
+.imgContainer.prev .list .item:nth-child(2) .desc,
+.imgContainer.prev .list .item:nth-child(2) button {
+    animation: countOut 1.5s linear 1 forwards;
+}
+
+@keyframes countOut {
+    to {
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.imgContainer.next .arrows button,
+.imgContainer.prev .arrows button {
+    pointer-events: none;
+}
+
+/* time */
+.time {
+    width: 0%;
+    height: 5px;
+    background-color: #EAB308;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.imgContainer.prev .time,
+.imgContainer.next .time {
+    width: 100%;
+    animation: timeRunning 2.5s linear 1 forwards;
+}
+
+@keyframes timeRunning {
+    to {
+        width: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .imgContainer .list .contents {
         position: absolute;
         top: 20%;
         width: 1140px;
-        max-width: 80%;
-        left: 20%;
-        transform: translateX(-50);
-        padding-right: 30%;
-        box-sizing: border-box;
-        color: #fff;
-        text-shadow: 0 50px 10px #0004;
-        gap: .4rem;
+        max-width: 70%;
+        left: 10%;
     }
 
-    .imgContainer .list .contents .name{
-        font-size: 3rem;
-        font-weight: 800;
-    }
-
-    .imgContainer .list .contents .desc{
-        font-size: 1.2rem;
-        font-weight: 600;
-        
-    }
-
-    .imgContainer .list .contents button{
-        font-size: 1rem;
-        font-weight: 700;
-        border: none;
-        background-color: #EAB308;
-        padding: .5rem 1rem;  
-        border-radius: .5rem;
-        color: #fff;
-        cursor: pointer;     
-    }
-
-    /* The thumbnail */
-    .Thumbnail{
+    .arrows {
         position: absolute;
-        bottom: 50px;
-        left: 50%;
-        width: max-content;
-        z-index: 99;
-        display: flex;
-        gap: 20px;
-    }
-
-    .Thumbnail .item{
-        width: 200px;
-        height: 350px;
-        flex-shrink: 0;
-        position: relative;
-    }
-
-    .Thumbnail .item img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-        box-shadow: 0 10px 20px 0;
-    }
-
-    .Thumbnail .item .contents{
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        font-size: 1.8rem;
-        color: #fff;
-        font-weight: 800;
-        text-align: center;
-        background-color: #2965F1;
-        border-radius: .2rem;
-        text-shadow: 0 10px 15px 0;
-    }
-
-    /* the arrows */
-    .arrows{
-        position: absolute;
-        top: 70%;
-        right: 40%;
+        top: 60%;
+        right: 50%;
         width: 300px;
         max-width: 30%;
         display: flex;
@@ -256,7 +455,7 @@
         z-index: 10;
     }
 
-    .arrows button{
+    .arrows button {
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -265,270 +464,89 @@
         font-family: monospace;
         color: #EAB308;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 2rem;
         transition: .5s;
         cursor: pointer;
-        z-index: 100;
+        z-index: 10;
     }
 
-    .arrows button:hover{
+    .arrows button:hover {
         background-color: #2965F1;
         font-family: monospace;
         color: #ffff;
         scale: 1.2;
     }
+}
 
-    /* functionalitioes */
-    .imgContainer .list .item:nth-child(1){
-        z-index: 1;
-    }
-
-    .imgContainer .list .item:nth-child(1) .name,
-    .imgContainer .list .item:nth-child(1) .desc,
-    .imgContainer .list .item:nth-child(1) button{
-        transform: translateY(50px);
-        filter: blur(20px);
-        opacity: 0;
-        animation: displayIt .5s 1s linear 1 forwards;
+@media (max-width: 678px) {
+    .imgContainer .list .contents {
+        padding-right: 0;
     }
 
-    @keyframes displayIt{
-        to{
-            opacity: 1;
-            filter: blur(0);
-            transform: translateY(0);
-        }
-    }
-
-    .imgContainer .list .item:nth-child(1) .name{
-        animation-delay: 1.2s;
-    }
-    .imgContainer .list .item:nth-child(1) .desc{
-        animation-delay: 1.4s;
-    }
-    .imgContainer .list .item:nth-child(1) button{
-        animation-delay: 1.6s;
-    }
-
-    /* clicks */
-    .imgContainer.next .list .item:nth-child(1) img{
-        width: 150px;
-        height: 220px;
+    .imgContainer .list .contents {
         position: absolute;
-        left: 50%;
-        /* bottom: 50px; */
-        border-radius: 15px;
-        animation: showImage 0.5s linear 1 forwards;
+        top: 20%;
+        width: 1140px;
+        max-width: 70%;
+        left: 10%;
+        transform: translateX(-50);
+        padding-right: 30%;
+        box-sizing: border-box;
+        color: #fff;
+        text-shadow: 0 50px 10px #0004;
+        gap: .4rem;
     }
 
-    @keyframes showImage{
-        to{
-            width: 100%;
-            height: 100%;
-            left: 0;
-            right: 0;
-            border-radius: 0;
-        }
+    .imgContainer .list .contents .name {
+        font-size: 2rem;
+        font-weight: 800;
     }
 
-    .imgContainer.next .Thumbnail .item:nth-last-child(1){
-        width: 0;
-        opacity: 0;
-        overflow: hidden;
-        animation: showThumb 0.5s linear 1 forwards;
+    .imgContainer .list .contents .desc {
+        font-size: .8rem;
+        font-weight: 600;
     }
 
-    @keyframes showThumb{
-        to{
-            width: 150px;
-        }
-    }
-
-    .imgContainer.next .Thumbnail{
-        transform: translateX(150px);
-        animation: transformThumb .5s linear 1 forwards;
-    }
-
-    @keyframes transformThumb{
-        to{
-            transform: translateX(0);
-        }
-    }
-
-    /* previous button */
-    .imgContainer.prev .list .item:nth-child(2){
-        z-index: 2;
-    }
-
-    .imgContainer.prev .list .item:nth-child(2) img{
+    .arrows {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        animation: outImage .5s linear 1 forwards;
+        top: 60%;
+        right: 60%;
+        width: 300px;
+        max-width: 30%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        z-index: 100;
     }
 
-    @keyframes outImage{
-        to{
-            width: 150px;
-            height: 220px;
-            border-radius: 15px;
-            left: 50%;
-            bottom: 50px;
-        }
+    .arrows button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        font-family: monospace;
+        color: #EAB308;
+        font-weight: bold;
+        font-size: 2rem;
+        transition: .5s;
+        cursor: pointer;
+        z-index: 100;
     }
 
-    .imgContainer.prev .Thumbnail .item:nth-child(1){
-        width: 0;
-        overflow: hidden;
-        opacity: 0;
-        animation: showThumb .5s linear 1 forwards;
+    .arrows button:hover {
+        background-color: #2965F1;
+        font-family: monospace;
+        color: #ffff;
+        scale: 1.1;
     }
 
-    .imgContainer.prev .list .item:nth-child(2) .name,
-    .imgContainer.prev .list .item:nth-child(2) .desc,
-    .imgContainer.prev .list .item:nth-child(2) button{
-        animation: countOut 1.5s linear 1 forwards;
-    }
-
-    @keyframes countOut{
-        to{
-            transform: translateY(-150px);
-            filter: blur(20px);
-            opacity: 0;
-        }
-    }
-
-    .imgContainer.next .arrows button,
-    .imgContainer.prev .arrows button{
-        pointer-events: none;
-    }
-
-    /* time */
-    .time{
-        width: 0%;
-        height: 5px;
-        background-color: #EAB308;
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 0;
-    }
-
-    .imgContainer.prev .time,
-    .imgContainer.next .time{
+    .imgContainer {
         width: 100%;
-        animation: timeRunning 2.5s linear 1 forwards;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        border: .5rem solid #fff;
+        border-radius: 1rem;
     }
-
-    @keyframes timeRunning{
-        to{
-            width: 0;
-        }
-    }
-
-    @media (max-width: 1200px){
-        .imgContainer .list .contents{
-            position: absolute;
-            top: 20%;
-            width: 1140px;
-            max-width: 70%;
-            left: 10%;
-        }
-
-        .arrows{
-            position: absolute;
-            top: 60%;
-            right: 50%;
-            width: 300px;
-            max-width: 30%;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            z-index: 10;
-        }
-           
-        .arrows button{
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: rgb(0, 0, 0);
-            border: none;
-            font-family: monospace;
-            color: #EAB308;
-            font-weight: bold;
-            font-size: 2rem;
-            transition: .5s;
-            cursor: pointer;
-            z-index: 10;
-        }
-    
-        .arrows button:hover{
-            background-color: #2965F1;
-            font-family: monospace;
-            color: #ffff;
-            scale: 1.2;
-        }
-    }
-    @media (max-width: 678px){
-        .imgContainer .list .contents{
-            padding-right: 0;
-        }
-
-        .imgContainer .list .contents{
-            position: absolute;
-            top: 20%;
-            width: 1140px;
-            max-width: 70%;
-            left: 10%;
-            transform: translateX(-50);
-            padding-right: 30%;
-            box-sizing: border-box;
-            color: #fff;
-            text-shadow: 0 50px 10px #0004;
-            gap: .4rem;
-        }
-
-        .imgContainer .list .contents .name{
-            font-size: 2rem;
-            font-weight: 800;
-        }
-    
-        .imgContainer .list .contents .desc{
-            font-size: .8rem;
-            font-weight: 600;
-        }
-
-        .arrows{
-            position: absolute;
-            top: 60%;
-            right: 60%;
-            width: 300px;
-            max-width: 30%;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            z-index: 100;
-        }
-           
-        .arrows button{
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgb(0, 0, 0);
-            border: none;
-            font-family: monospace;
-            color: #EAB308;
-            font-weight: bold;
-            font-size: 2rem;
-            transition: .5s;
-            cursor: pointer;
-            z-index: 100;
-        }
-    
-        .arrows button:hover{
-            background-color: #2965F1;
-            font-family: monospace;
-            color: #ffff;
-            scale: 1.1;
-        }
-    }
+}
