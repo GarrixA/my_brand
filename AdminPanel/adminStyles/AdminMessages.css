@@ -562,7 +562,7 @@ section {
   /* sidebar of mobile view*/
   .AdminPanelWraper .sideBar {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 9%;
     left: -100%;
     transition: 1s;
@@ -571,7 +571,7 @@ section {
 
   .AdminPanelWraper.active .sideBar {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 9%;
     left: 0%;
     transition: 1s;
@@ -614,23 +614,6 @@ section {
     font-size: 1.7rem;
   }
 
-  .tr td {
-    background-color: #fff;
-    padding: .2rem .0rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
-  table th {
-    position: sticky;
-    top: 0;
-    background-color: #020617;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: .5rem 1rem;
-    text-align: left;
-  }
 
   /* meaages and senders */
   .messageWrapper .nav {
@@ -664,5 +647,26 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  
+  .body .rightBody .wrp .recieved p {
+    width: 80%;
+  }
+
+
+  .body .rightBody .wrp .sent p {
+    width: 60%;
+  }
+}
+
+@media(max-width: 414px){
+  .body .rightBody .wrp .recieved p {
+    width: 100%;
+  }
+
+
+  .body .rightBody .wrp .sent p {
+    width: 80%;
   }
 }
