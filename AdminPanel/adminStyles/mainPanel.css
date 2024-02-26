@@ -399,14 +399,14 @@ section {
     /* sidebar of mobile view*/
     .AdminPanelWraper .sideBar {
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 9%;
         left: -100%;
         transition: 1s;
     }
     .AdminPanelWraper.active .sideBar{
         width: 100%;
-        position: absolute;
+        position: fixed;
         top: 9%;
         left: 0%;
         transition: 1s;
@@ -446,6 +446,10 @@ section {
 
     .AdminPanelWraper .sideBar .navigations .dashboard h1 {
         font-size: 1.7rem;
+    }
+
+    .AdminPanelWraper .RightSideBody {
+        margin: 6rem 1.5rem;
     }
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/AdminPanel/adminStyles/addBlog.css">
-    <link rel="stylesheet" href="/AdminPanel/adminStyles/charts.css">
+    <!-- <link rel="stylesheet" href="/AdminPanel/adminStyles/charts.css"> -->
     <script src="https://cdn.tiny.cloud/1/kg3033m6umoiuxxlhw6hqz4ewuw7kmed59rvsjo9cs8meel1/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
     <title>Admin</title>
@@ -50,6 +50,14 @@
                     </div>
                     <div class="Users">
                         <div class="icon">
+                            <img src="/images/fa-solid_project-diagram.svg" alt="project">
+                        </div>
+                        <a href="/AdminPanel/Projects.html">
+                            <h1>Projects</h1>
+                        </a>
+                    </div>
+                    <div class="Users">
+                        <div class="icon">
                             <img src="/images/mdi_users.svg" alt="user">
                         </div>
                         <a href="/AdminPanel/AdminUsers.html">
@@ -70,35 +78,51 @@
                     </div>
                     <div class="icons">
                         <div class="sun">
-                            <img src="/images/bi_sun.svg" alt="bi_sun">
+                            <img src="/images/ion_notifications.svg" alt="bi_sun">
                         </div>
-                        <div class="user">
-                            <img src="/images/codicon_account.svg" alt="account">
+                        <div class="user" onclick="showSettings()">
+                            <img src="/images/ic_round-settings.svg" alt="account">
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- the settings modal -->
+                <div class="settings" id="settings">
+                    <h1>Settings</h1>
+                    <div class="updatep">
+                        <div class="updateProfile">
+                            <div class="img"><img src="/images/codicon_account.svg" alt=""></div>
+                            <p>Account</p>
+                        </div>
+                        <a href="/index.html">
+                            <div class="logOut">
+                                <div class="img"><img src="/images/tabler_logout.svg" alt=""></div>
+                                <p>Log out</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
                 <div class="RightSideBody">
                     <div class="formWrapper">
                         <h1>Add Blog</h1>
-                        <form>
+                        <form id="blogs-form">
                             <div class="image">
                                 <label>Add Image</label>
-                                <input type="file" placeholder="place image">
+                                <input type="file" placeholder="place image" id="image">
                             </div>
                             <div class="Title">
                                 <label>Title</label>
-                                <input type="text" placeholder="add title">
+                                <input type="text" placeholder="add title" id="title">
                             <div class="date">
                                 <label>Date</label>
-                                <input type="datetime-local" placeholder="chose date">
+                                <input type="date" placeholder="chose date" id="date">
                             </div>
                             <div class="description">
                                 <label>Description</label>
-                                <textarea>Hello World!</textarea>
-                                <div class="submit">
-                                    <button>Submit</button>
+                                <textarea id="description" type="text"></textarea>
+                                <div class="submit" >
+                                    <button id="button" onclick="createBlog(event)">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -109,6 +133,7 @@
     </section>
     <script src="/AdminPanel/adminStyles/addblog.js"></script>
     <script src="/styles/index.js"></script>
+    <script src="/AdminPanel/fuctionalities/createBlog.js"></script>
 </body>
 
 </html>

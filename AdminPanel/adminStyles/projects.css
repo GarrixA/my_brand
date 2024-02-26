@@ -157,92 +157,283 @@ section {
 
 
 /* Responsiveness*/
-@media (max-width: 1200px) {
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
-    .likesCard .bottom span,
-    .commentsCard .bottom span {
-        padding: 0rem 4rem;
-    }
-
-    /* styles for heding 1 */
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .top h1,
-    .likesCard .top h1,
-    .commentsCard .top h1 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
-    .likesCard .bottom span,
-    .commentsCard .bottom span {
-        padding: 0rem 4rem;
-        font-size: 2.5rem;
-    }
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .top h1,
-    .likesCard .top h1,
-    .commentsCard .top h1 {
-        font-size: 1rem;
-    }
-}
-
 @media (max-width: 960px) {
 
     .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
     .likesCard .bottom span,
     .commentsCard .bottom span {
-        padding: .4rem 3rem;
-        font-size: 2rem;
+      padding: .4rem 3rem;
+      font-size: 2rem;
     }
-
-    @media (max-width: 800px) {
-        .AdminPanelWraper .RightSideBody .cards {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
+  
+    .AdminPanelWraper .topRightBar {
+      width: 85%;
+      height: 100%;
+      background-color: #111827;
+      position: relative;
+      left: 15%;
+      height: fit-content;
     }
-
-    .AdminPanelWraper .RightSideBody .cards 
-    .blogsCard,
+  
+    .AdminPanelWraper .topRightBar .adminNavbar {
+      width: 82%;
+      right: 0;
+    }
+  
+    .AdminPanelWraper .sideBar {
+      width: 18%;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+      font-size: 1rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+      font-size: 1rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+      width: 20%;
+    }
+  
+    .AdminPanelWraper .sideBar .profile {
+      font-size: .9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .AdminPanelWraper .topRightBar .RightSideBody {
+      margin: 7rem 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contentWraper {
+      width: 100%;
+    }
+  
+    .AdminPanelWraper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .AdminPanelWraper .topRightBar {
+      width: 100%;
+      height: 100%;
+      background-color: #111827;
+      position: relative;
+      left: 0;
+      height: fit-content;
+    }
+  
+    .AdminPanelWraper .topRightBar .adminNavbar {
+      width: 100%;
+    }
+  
+    /* the cards */
+    .AdminPanelWraper .RightSideBody .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .AdminPanelWraper .RightSideBody .cards .blogsCard,
     .commentsCard,
     .likesCard {
-        flex: 1;
-        margin-left: 1rem;
+      background-color: #020617;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: .2rem;
+      flex: 1;
+      margin: 1rem;
     }
-
-    @media (max-width: 640px) {
-        .AdminPanelWraper .RightSideBody .cards {
-            justify-content: center;
-            flex-wrap: nowrap;
-            flex-direction: column;
-        }
+  
+    .menu {
+      display: block;
+      cursor: pointer;
     }
-
+  
+    .bars {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #fff;
+    }
+  
+    .menu.active .bars:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu.active .bars:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: #2965f1;
+      width: 30px;
+    }
+  
+    .menu.active .bars:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: #2965f1;
+      width: 30px;
+    }
+  
+    /* sidebar of mobile view*/
     .AdminPanelWraper .sideBar {
-        display: none;
+      width: 100%;
+      position: absolute;
+      top: 9%;
+      left: -100%;
+      transition: 1s;
+      z-index: 110;
     }
-
-    .AdminPanelWraper .topRightBar {
-        width: 100%;
-        left: 0;
+  
+    .AdminPanelWraper.active .sideBar {
+      width: 100%;
+      position: absolute;
+      top: 9%;
+      left: 0%;
+      transition: 1s;
     }
-
-    .AdminPanelWraper .topRightBar .adminNavbar {
-        width: 100%;
-        left: 0;
+  
+    .greetings {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
-
-    .AdminPanelWraper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  
+    .AdminPanelWraper .sideBar .profile {
+      display: none;
     }
-}
+  
+    .AdminPanelWraper .sideBar .navigations {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      margin: 2rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+      width: 7%;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+      font-size: 1.7rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+      font-size: 1.7rem;
+    }
+  
+  
+    /* meaages and senders */
+    .messageWrapper .nav {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .messageWrapper .body .rightBody {
+      display: none;
+    }
+  
+    .messageWrapper .body .leftBody {
+      width: 100%;
+    }
+  
+    .messageWrapper .body .leftBody .onemessage .prof {
+      width: 10%;
+      background-color: #252525;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  
+  
+    .messageWrapper .navLeft {
+      font-size: 2rem;
+      font-weight: 700;
+      width: 100%;
+      padding: 0.3rem 1rem;
+      background-color: #020617;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+    .body .rightBody .wrp .recieved p {
+      width: 80%;
+    }
+  
+  
+    .body .rightBody .wrp .sent p {
+      width: 60%;
+    }
+  }
+  
+  @media(max-width: 414px){
+    .body .rightBody .wrp .recieved p {
+      width: 100%;
+    }
+  
+  
+    .body .rightBody .wrp .sent p {
+      width: 80%;
+    }
+  }
+/* menu */
+.menu {
+    display: block;
+    cursor: pointer;
+  }
 
+  .bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: #fff;
+  }
+
+  .menu.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu.active .bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: #2965f1;
+    width: 30px;
+  }
+
+  .menu.active .bars:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: #2965f1;
+    width: 30px;
+  }
 
 /* Modal of settings */
 .settings{

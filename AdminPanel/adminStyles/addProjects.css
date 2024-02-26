@@ -152,173 +152,16 @@ section {
 .AdminPanelWraper .RightSideBody {
     margin: 8rem 3.5rem;
 }
-
-/* the cards */
-
-
-/* Responsiveness*/
-@media (max-width: 1200px) {
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
-    .likesCard .bottom span,
-    .commentsCard .bottom span {
-        padding: 0rem 4rem;
-    }
-
-    /* styles for heding 1 */
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .top h1,
-    .likesCard .top h1,
-    .commentsCard .top h1 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
-    .likesCard .bottom span,
-    .commentsCard .bottom span {
-        padding: 0rem 4rem;
-        font-size: 2.5rem;
-    }
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .top h1,
-    .likesCard .top h1,
-    .commentsCard .top h1 {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 960px) {
-
-    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
-    .likesCard .bottom span,
-    .commentsCard .bottom span {
-        padding: .4rem 3rem;
-        font-size: 2rem;
-    }
-
-    @media (max-width: 800px) {
-        .AdminPanelWraper .RightSideBody .cards {
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-    }
-
-    .AdminPanelWraper .RightSideBody .cards 
-    .blogsCard,
-    .commentsCard,
-    .likesCard {
-        flex: 1;
-        margin-left: 1rem;
-    }
-
-    @media (max-width: 640px) {
-        .AdminPanelWraper .RightSideBody .cards {
-            justify-content: center;
-            flex-wrap: nowrap;
-            flex-direction: column;
-        }
-    }
-
-    .AdminPanelWraper .sideBar {
-        display: none;
-    }
-
-    .AdminPanelWraper .topRightBar {
-        width: 100%;
-        left: 0;
-    }
-
-    .AdminPanelWraper .topRightBar .adminNavbar {
-        width: 100%;
-        left: 0;
-    }
-
-    .AdminPanelWraper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-/* Modal of settings */
-.settings{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    right: 1%;
-    top: 102%;
-    overflow: hidden;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    background-color: #111827;
-    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
-    padding-bottom: 1rem;
-}
-
-.settings a{
-    color: #fff;
-}
-
-.settings h1{
-    background-color: #020617;
-    color: #fff;
-    padding: .4rem 3rem;
-}
-
-.settings .updatep{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem .4rem;
-}
-
-.settings 
-    .updateProfile, 
-    .logOut{
-        display: flex;
-        align-items: center;
-        font-size: 1.4rem;
-        transition: .4s;
-        padding: .4rem .4rem;
-        gap: .4rem;
-        cursor: pointer;
-    }
-
-.settings 
-    .updateProfile:hover, 
-    .logOut:hover{
-        background-color: #EAB308;
-        scale: 1.1;
-    }
-
-.settings 
-    .updateProfile .img, 
-    .logOut .img{
-        width: 15%;
-        display: flex;
-        align-items: center;
-    }
-
-.settings 
-    .updateProfile .img img, 
-    .logOut .img img{
-        width: 100%;
-        object-fit: contain;
-    }
-
-
-    /* form */
-.formWrapper{
-    
+  
+  /* form */
+  .formWrapper {
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.formWrapper h1{
+  }
+  
+  .formWrapper h1 {
     background-color: #0358ad;
     color: #fff;
     font-size: 2rem;
@@ -327,9 +170,9 @@ section {
     padding: 1rem 2rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-}
-
-.formWrapper form{
+  }
+  
+  .formWrapper form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0rem 0rem;
@@ -341,9 +184,9 @@ section {
     border-bottom-right-radius: 2rem;
     color: #fff;
     align-items: center;
-}
-
-.formWrapper form .image{
+  }
+  
+  .formWrapper form .image {
     border-radius: 2rem;
     height: 80%;
     display: flex;
@@ -353,55 +196,53 @@ section {
     border: #EAB308 .3rem dashed;
     cursor: pointer;
     transition: transform 1s;
-}
-
-.formWrapper form .image:hover {
+  }
+  
+  .formWrapper form .image:hover {
     transform: rotate(360deg);
-}
-
-.formWrapper form .image:active {
+  }
+  
+  .formWrapper form .image:active {
     scale: 1.2;
-}
-
-.formWrapper form .image input{
+  }
+  
+  .formWrapper form .image input {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     cursor: pointer;
-}
-
-.formWrapper form 
-.image, 
-.Title, 
-.description, 
-.date{
+  }
+  
+  .formWrapper form .image,
+  .Title,
+  .description,
+  .date {
     display: flex;
     flex-direction: column;
     width: 100%;
     font-size: 1.5rem;
     padding: .2rem 0rem;
-}
-
-.formWrapper form 
-.image input, 
-.Title input,  
-.date input{
+  }
+  
+  .formWrapper form .image input,
+  .Title input,
+  .date input {
     padding: .6rem;
     border-radius: .2rem;
     cursor: pointer;
-}
-
-.formWrapper form  .description .submit{
+  }
+  
+  .formWrapper form .description .submit {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 1rem;
-}
-
-.formWrapper form  .description .submit button{
+  }
+  
+  .formWrapper form .description .submit button {
     width: 40%;
     font-size: 1.2rem;
     border: none;
@@ -410,4 +251,341 @@ section {
     background-color: #EAB308;
     padding: .4rem .6rem;
     border-radius: .4rem;
-}
+  }
+  
+  /* Modal of settings */
+  .settings {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    top: 102%;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #111827;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
+    padding-bottom: 1rem;
+  }
+  
+  .settings a {
+    color: #fff;
+  }
+  
+  .settings h1 {
+    background-color: #020617;
+    color: #fff;
+    padding: .4rem 3rem;
+  }
+  
+  .settings .updatep {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .4rem;
+  }
+  
+  .settings .updateProfile,
+  .logOut {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    transition: .4s;
+    padding: .4rem .4rem;
+    gap: .4rem;
+    cursor: pointer;
+  }
+  
+  .settings .updateProfile:hover,
+  .logOut:hover {
+    background-color: #EAB308;
+    scale: 1.1;
+  }
+  
+  .settings .updateProfile .img,
+  .logOut .img {
+    width: 15%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .settings .updateProfile .img img,
+  .logOut .img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  /* Modal of settings */
+  /* .settings{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          right: 1%;
+          top: 102%;
+          overflow: hidden;
+          border-top-left-radius: .5rem;
+          border-top-right-radius: .5rem;
+          background-color: #111827;
+          box-shadow: 0 10px 15px 0 rgba(0,0,0,0.5);
+          padding-bottom: 1rem;
+        }
+        
+        .settings a{
+          color: #fff;
+        }
+        
+        .settings h1{
+          background-color: #020617;
+          color: #fff;
+          padding: .4rem 3rem;
+        }
+        
+        .settings .updatep{
+          display: flex;
+          flex-direction: column;
+          padding: 1rem .4rem;
+        }
+        
+        .settings 
+          .updateProfile, 
+          .logOut{
+              display: flex;
+              align-items: center;
+              font-size: 1.4rem;
+              transition: .4s;
+              padding: .4rem .4rem;
+              gap: .4rem;
+              cursor: pointer;
+          }
+        
+        .settings 
+          .updateProfile:hover, 
+          .logOut:hover{
+              background-color: #EAB308;
+              scale: 1.1;
+          }
+        
+        .settings 
+          .updateProfile .img, 
+          .logOut .img{
+              width: 15%;
+              display: flex;
+              align-items: center;
+          }
+        
+        .settings 
+          .updateProfile .img img, 
+          .logOut .img img{
+              width: 100%;
+              object-fit: contain;
+          } */
+  
+  /* Responsiveness */
+  
+  @media (max-width: 960px) {
+  
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
+    .likesCard .bottom span,
+    .commentsCard .bottom span {
+      padding: .4rem 3rem;
+      font-size: 2rem;
+    }
+  
+    .AdminPanelWraper .topRightBar {
+      width: 85%;
+      height: 100%;
+      background-color: #111827;
+      position: relative;
+      left: 15%;
+      height: fit-content;
+    }
+  
+    .AdminPanelWraper .topRightBar .adminNavbar {
+      width: 82%;
+      right: 0;
+    }
+  
+    .AdminPanelWraper .sideBar {
+      width: 18%;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+      font-size: 1rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+      font-size: 1rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+      width: 20%;
+    }
+  
+    .AdminPanelWraper .sideBar .profile {
+      font-size: .9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .AdminPanelWraper .topRightBar .RightSideBody {
+      margin: 7rem 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contentWraper {
+      width: 100%;
+    }
+  
+    .AdminPanelWraper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .AdminPanelWraper .topRightBar {
+      width: 100%;
+      height: 100%;
+      background-color: #111827;
+      position: relative;
+      left: 0;
+      height: fit-content;
+    }
+  
+    .AdminPanelWraper .topRightBar .adminNavbar {
+      width: 100%;
+    }
+  
+    /* the cards */
+    .AdminPanelWraper .RightSideBody .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .AdminPanelWraper .RightSideBody .cards .blogsCard,
+    .commentsCard,
+    .likesCard {
+      background-color: #020617;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: .2rem;
+      flex: 1;
+      margin: 1rem;
+    }
+  
+    .menu {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bars {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      background-color: #fff;
+    }
+  
+    .menu.active .bars:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu.active .bars:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: #2965f1;
+      width: 30px;
+    }
+  
+    .menu.active .bars:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: #2965f1;
+      width: 30px;
+    }
+  
+    /* sidebar of mobile view*/
+    .AdminPanelWraper .sideBar {
+      width: 100%;
+      position: fixed;
+      top: 9%;
+      left: -100%;
+      transition: 1s;
+      z-index: 110;
+    }
+  
+    .AdminPanelWraper.active .sideBar {
+      width: 100%;
+      position: fixed;
+      top: 9%;
+      left: 0%;
+      transition: 1s;
+    }
+  
+    .greetings {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .AdminPanelWraper .sideBar .profile {
+      display: none;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      margin: 2rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+      width: 7%;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+      font-size: 1.7rem;
+    }
+  
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+      font-size: 1.7rem;
+    }
+  
+    .formWrapper form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .formWrapper form .image {
+      border-radius: .5rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #111827;
+      border: #EAB308 0.3rem dashed;
+      cursor: pointer;
+      transition: transform 1s;
+    }
+  
+  }
