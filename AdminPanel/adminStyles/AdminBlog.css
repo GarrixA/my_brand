@@ -320,6 +320,58 @@ th, td{
 
 
 /* Responsiveness */
+
+@media (max-width: 960px) {
+
+    .AdminPanelWraper .RightSideBody .cards .blogsCard .bottom span,
+    .likesCard .bottom span,
+    .commentsCard .bottom span {
+        padding: .4rem 3rem;
+        font-size: 2rem;
+    }
+
+    .AdminPanelWraper .topRightBar {
+        width: 85%;
+        height: 100%;
+        background-color: #111827;
+        position: relative;
+        left: 15%;
+        height: fit-content;
+    }
+
+    .AdminPanelWraper .topRightBar .adminNavbar {
+        width: 82%;
+        right: 0;
+    }
+
+    .AdminPanelWraper .sideBar {
+        width: 18%;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .blogs h1,
+    .projects h1,
+    .AdminMessage h1,
+    .Users h1 {
+        font-size: 1rem;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .dashboard h1 {
+        font-size: 1rem;
+    }
+
+    .AdminPanelWraper .sideBar .navigations .dashboard .icon,
+    .projects .icon,
+    .blogs .icon,
+    .AdminMessage .icon,
+    .Users .icon {
+        width: 20%;
+    }
+
+    .AdminPanelWraper .sideBar .profile {
+        font-size: .9rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     .AdminPanelWraper .topRightBar .RightSideBody{
