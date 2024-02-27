@@ -13,19 +13,24 @@ window.onscroll = () => {
         link.classList.remove('active');
       });
 
-      document.querySelector(`header nav a[href='#${id}']`).classList.add('active')
+      let targetLink = document.querySelector(`header nav a[href='#${id}']`);
+      if (targetLink) {
+        targetLink.classList.add('active');
+      }
     }
   })
 }
 
 document.addEventListener('scroll', () => {
-  const header = document.querySelector('header')
-  if (window.scrollY > 0) {
-    header.classList.add('scrolled')
-  } else {
-    header.classList.remove('scrolled')
+  const header = document.querySelector('header');
+  if (header) {
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
   }
-})
+});
 
 function scrollToSection(sectionId) {
   let targetSection = document.getElementById(sectionId);
