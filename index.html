@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
+<body onload="readAll()">
     <!-- The navigation bar -->
     <header id="header">
         <a class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
@@ -254,55 +254,7 @@
         <section id="blogs">
             <h1>Blogs</h1>
                 <div class="blogsContainer">
-                    <div class="blog">
-                        <div class="blogImage">
-                            <img src="/images/blog.svg" alt="blog">
-                        </div>
-                        <h2> 1111111Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
-                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
-                            document or a
-                            typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
-                            before
-                            the final copy is availableA typeface without relying on meaningful content..... </p>
-                        <button>View more</button>
-                    </div>
-                    
-                    <div class="blog">
-                        <div class="blogImage">
-                            <img src="/images/abicar.png" alt="blog">
-                        </div>
-                        <h2>22222Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
-                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
-                            document or a
-                            typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
-                            before
-                            the final copy is availableA typeface without relying on meaningful content..... </p>
-                        <button>View more</button>
-                    </div>
-                    <div class="blog">
-                        <div class="blogImage">
-                            <img src="/images/blog.svg" alt="blog">
-                        </div>
-                        <h2>3333Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
-                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
-                            document or a
-                            typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
-                            before
-                            the final copy is availableA typeface without relying on meaningful content..... </p>
-                        <button>View more</button>
-                    </div>
-                    <div class="blog">
-                        <div class="blogImage">
-                            <img src="/images/blog.svg" alt="blog">
-                        </div>
-                        <h2>4444Lorem ipsum is a placeholder text commonly used to demonstrate </h2>
-                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
-                            document or a
-                            typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
-                            before
-                            the final copy is availableA typeface without relying on meaningful content..... </p>
-                        <button>View more</button>
-                    </div>
+                    <!-- Blogs go here from .js file -->
                 </div>
                 <div class="nexts">&#10095;</div>
                 <div class="preve">&#10094;</div>
@@ -405,8 +357,9 @@
     </main>
     <script src="/styles/index.js"></script>
     <script src="/styles/Slider.js"></script>
-    <script src="/styles/swiper.js"></script>
     <script src="/styles/login.js"></script>
+    <script src="/styles/swiper.js"></script>
+    <script src="/AdminPanel/fuctionalities/createBlog.js"></script>
 </body>
 
 </html>
