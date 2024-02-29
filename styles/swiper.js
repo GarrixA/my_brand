@@ -1,5 +1,5 @@
 
-const blogsContainer = document.querySelector('.blogsContainer');
+const blogsContainer = document.querySelector('#blogsContainer');
 const nextBtn = document.querySelector('.nexts');
 const prevBtn = document.querySelector('.preve');
 
