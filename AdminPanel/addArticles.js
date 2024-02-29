@@ -1,8 +1,8 @@
 const formData = document.getElementById('blogs-form');
+
 function generateUniqueId() {
     return '_' + Math.random().toString(36).substring(2, 11);
 }
-
 
 formData.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -19,7 +19,7 @@ formData.addEventListener('submit', function (event) {
             id : generateUniqueId(),
             blogImage: articleImage,
             blogTitle: title,
-            blogDate: date,
+            blogDate: date, 
             blogDescription: description
         }
         myBlogArray.unshift(articleContents);
