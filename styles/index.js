@@ -93,20 +93,26 @@ dashMenu.addEventListener('click', () => {
 
 
 // getting blogs in blogs sections
+
 const getAllArticles = JSON.parse(localStorage.getItem('myBlogs')) || [];
 const blogsContainer = document.getElementById('blogsContainer');
 
 if (getAllArticles.length > 0) {
   blogsContainer.innerHTML = `${getAllArticles.map((item, index) => {
     return `
-      <div class="blog">
-        <div class="blogImage">
-            <img src="${item.blogImage}">
+      <article class="card__article swiper-slide">
+        <div class="card__image">
+          <img src="${item.blogImage}">
+          <div class="card__shadow"></div>
         </div>
-        <h2>${item.blogTitle}</h2>
-        <p>${item.blogDescription}</p>
-        <a href="/singleBlog.html?id=${item.id}"> <button>view more</button></a>
-      </div>
+
+        <div class="card__data">
+          <h3 class="card__name">${item.blogTitle}</h3>
+          <p class="card__description">${item.blogDescription}</p>
+
+          <a href="/singleBlog.html?id=${item.id}" class="card__button">View More</a>
+        </div>
+      </article>
       `
   }).join('')
     }`;

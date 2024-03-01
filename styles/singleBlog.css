@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .blogWrapper{
     margin-top: 10rem;
     position: relative;
@@ -50,11 +51,15 @@
 
 .commentWraper .oneComment .wraper{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     gap: .60rem;
     margin: 1rem .7rem;
     border-radius: 1rem;
+    overflow-y: scroll;
+    max-height: 10rem;
+    scrollbar-width: thin;
+    padding: .5rem;
+    scrollbar-color: #111827 #111827;
 }
 
 .commentWraper .oneComment .contents{
