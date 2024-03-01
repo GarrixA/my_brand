@@ -20,7 +20,8 @@ formData.addEventListener('submit', function (event) {
             blogImage: articleImage,
             blogTitle: title,
             blogDate: date, 
-            blogDescription: description
+            blogDescription: description,
+            comments: []
         }
         myBlogArray.unshift(articleContents);
         localStorage.setItem('myBlogs', JSON.stringify(myBlogArray));
