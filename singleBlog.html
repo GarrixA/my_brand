@@ -10,44 +10,10 @@
 </head>
 
 <body>
-    <!-- The navigation bar -->
-    <header>
-        <a class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
-        <nav id="nav">
-            <a href="#home" class="active" onclick="toggleMenu()">Home</a>
-            <a href="#about" onclick="toggleMenu()">About</a>
-            <a href="#skills" onclick="toggleMenu()">Skills</a>
-            <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
-            <a href="#blogs" onclick="toggleMenu()">Blogs</a>
-            <a href="#contact" onclick="toggleMenu()">Contact</a>
-            <a href="#login" class="login" onclick="toggleMenu()">Login</a>
-        </nav>
-        <nav class="nav">
-            <div class="holder" id="anim">
-                <a href="#home" >Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#blogs">Blogs</a>
-                <a href="#contact">Contact</a>
-                <a href="#login" class="login">Login</a>
-            </div>
-
-        </nav>
-
-        <div class="menu" id="menu">
-            <div onclick="toggleMenu()">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </div>
-        </div>
-    </header>
-
     <main>
         <section id="singleBlog">
-            <div class="blogWrapper">
-                <h1>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
+            <div class="blogWrapper" id="blogsWraper">
+                <!-- <h1>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
                     typeface without relying on meaningful content. </h1>
                 <div class="blogside">
                     <div class="img">
@@ -108,11 +74,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
-    <script src="/styles/index.js"></script>
+    <script src="/AdminPanel/fuctionalities/getSingleBlog.js"></script>
+    <script src="/AdminPanel/fuctionalities/validateComment.js"></script>
 </body>
 
 </html>

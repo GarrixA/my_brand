@@ -58,26 +58,26 @@ let nav = document.getElementById('header')
 
 function toggleMenu() {
   menu.classList.toggle('openMenu');
-  nav.classList.toggle('active')
+  nav.classList.toggle('active');
 }
 
 
-function showSettings(){
+function showSettings() {
   let sett = document.getElementById('settings')
 
-  if(sett.style.display === 'flex'){
+  if (sett.style.display === 'flex') {
     sett.style.display = 'none'
-  }else{
+  } else {
     sett.style.display = 'flex'
   }
 }
 
-function showEditProfile(){
+function showEditProfile() {
   let profile = document.getElementById('myAccountModal')
 
-  if(profile.style.display === 'flex'){
+  if (profile.style.display === 'flex') {
     profile.style.display = 'none'
-  }else{
+  } else {
     profile.style.display = 'flex'
   }
 }
@@ -86,7 +86,34 @@ function showEditProfile(){
 const dashMenu = document.querySelector('.menu')
 const dashSidebar = document.querySelector('.AdminPanelWraper')
 
-dashMenu.addEventListener('click', ()=>{
+dashMenu.addEventListener('click', () => {
   dashMenu.classList.toggle('active')
   dashSidebar.classList.toggle('active')
-})
+});
+
+
+// getting blogs in blogs sections
+
+const getAllArticles = JSON.parse(localStorage.getItem('myBlogs')) || [];
+const blogsContainer = document.getElementById('blogsContainer');
+
+if (getAllArticles.length > 0) {
+  blogsContainer.innerHTML = `${getAllArticles.map((item, index) => {
+    return `
+      <article class="card__article swiper-slide">
+        <div class="card__image">
+          <img src="${item.blogImage}">
+          <div class="card__shadow"></div>
+        </div>
+
+        <div class="card__data">
+          <h3 class="card__name">${item.blogTitle}</h3>
+          <p class="card__description">${item.blogDescription}</p>
+
+          <a href="/singleBlog.html?id=${item.id}" class="card__button">View More</a>
+        </div>
+      </article>
+      `
+  }).join('')
+    }`;
+}

@@ -321,6 +321,15 @@ section {
   object-fit: contain;
 }
 
+.error-message{
+  color: red;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
 /* Modal of settings */
 /* .settings{
         display: none;

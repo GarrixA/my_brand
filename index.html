@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/responsive.css">
     <link rel="stylesheet" href="/styles/About.css">
-    <link rel="stylesheet" href="/styles/blogs.css">
     <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="/styles/login.css">
     <link rel="stylesheet" href="/styles/portfolio.css">
     <link rel="stylesheet" href="/styles/skills.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body onload="readAll()">
+<body>
     <!-- The navigation bar -->
     <header id="header">
         <a class="logo"><img src="/Images/Logo.svg" alt="logo"></a>
@@ -251,15 +251,40 @@
         </section>
 
         <!-- blogs section -->
-        <section id="blogs">
-            <h1>Blogs</h1>
-                <div class="blogsContainer">
-                    <!-- Blogs go here from .js file -->
+        <section id="blogs" class="container">
+            <div class="card__container swiper">
+                <div class="card__content">
+                   <div class="swiper-wrapper" id="blogsContainer">
+                      <!-- <article class="card__article swiper-slide">
+                         <div class="card__image">
+                            <img src="assets/img/avatar-1.png" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                         </div>
+          
+                         <div class="card__data">
+                            <h3 class="card__name">Kell Dawx</h3>
+                            <p class="card__description">
+                               Passionate about development and design, 
+                               I carry out projects at the request of users.
+                            </p>
+          
+                            <a href="#" class="card__button">View More</a>
+                         </div>
+                      </article> -->
+                   </div>
                 </div>
-                <div class="nexts">&#10095;</div>
-                <div class="preve">&#10094;</div>
-            </div>
-
+    
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                   <i class="ri-arrow-right-s-line"></i>
+                </div>
+                
+                <div class="swiper-button-prev">
+                   <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+             </div>
         </section>
 
         <!-- contact me section -->
@@ -281,7 +306,7 @@
                     <form>
                         <input type="text" placeholder="Type your name...">
                         <input type="email" placeholder="Type your email...">
-                        <textarea name=""  rows="5" placeholder="Type your message..."></textarea>
+                        <textarea name="" rows="5" placeholder="Type your message..."></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
@@ -358,8 +383,8 @@
     <script src="/styles/index.js"></script>
     <script src="/styles/Slider.js"></script>
     <script src="/styles/login.js"></script>
-    <script src="/styles/swiper.js"></script>
-    <script src="/AdminPanel/fuctionalities/createBlog.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
