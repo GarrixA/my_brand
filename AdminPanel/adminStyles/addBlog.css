@@ -252,6 +252,12 @@ section {
   background-color: #EAB308;
   padding: .4rem .6rem;
   border-radius: .4rem;
+  cursor: pointer;
+}
+
+.formWrapper form .description .submit button:hover{
+  scale: 1.1;
+  font-size: 1.6rem;
 }
 
 /* Modal of settings */
