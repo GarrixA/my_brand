@@ -9,7 +9,7 @@ if (getAllArticles.length > 0) {
         <tr>
             <td>${item.blogTitle}</td>
             <td>${item.blogDate}</td>
-            <td>0</td>
+            <td>${item.comments.length}</td>
             <td>0</td>
             <td>
                 <a href="/AdminPanel/editBlog.html"><button>
